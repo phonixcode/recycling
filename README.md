@@ -22,7 +22,7 @@ Before you begin, make sure you have the following prerequisites installed on yo
 3. Run the following command to clone a Recycling project from a Git repository (replace `project-name` with your desired project name):  
 
    ```shell
-    git clone <https://github.com/phonixcode/recycling.git> project-name
+    git clone https://github.com/phonixcode/recycling.git
 
 ## Step 2: Install Dependencies
 
