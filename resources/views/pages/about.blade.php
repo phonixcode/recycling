@@ -137,7 +137,7 @@
 
     <div class="border-top mx-auto" style="max-width: 25rem;"></div>
 
-    <!-- Team -->
+    {{-- <!-- Team -->
     <div class="container content-space-2 content-space-lg-3">
         <!-- Heading -->
         <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
@@ -309,6 +309,6 @@
         </div>
         <!-- End Row -->
     </div>
-    <!-- End Team -->
+    <!-- End Team --> --}}
 </main>
 @endsection
