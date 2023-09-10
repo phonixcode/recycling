@@ -71,8 +71,8 @@
       <nav class="js-mega-menu navbar-nav-wrap">
         <!-- Default Logo -->
         <a class="navbar-brand" href="/" aria-label="Front">
-          {{-- <img class="navbar-brand-logo" src="{{ asset('assets/svg/logos/logo-white.svg') }}" alt="Logo"> --}}
-          TOP POINT RECYCLERS
+          <img class="" src="{{ asset('assets/svg/logos/logo.png') }}" alt="Logo" width="150">
+          {{-- TOP POINT RECYCLERS --}}
         </a>
         <!-- End Default Logo -->
 
@@ -245,8 +245,8 @@
       <!-- Copyright -->
       <div class="w-md-85 text-lg-center mx-lg-auto">
         <p class="text-white-50 small">
-          <a class="link-sm link-light" href="#"><i class="bi-geo-alt-fill me-1"></i> 153 Williamson Plaza, Maggieberg</a><br>
-          <a class="link-sm link-light" href="tel:1-062-109-9222"><i class="bi-telephone-inbound-fill me-1"></i> +1 (062) 109-9222</a>
+          <a class="link-sm link-light" href="#"><i class="bi-geo-alt-fill me-1"></i> Dakata Small Scale Industrial Area, Kano State, Nigeria</a><br>
+          <a class="link-sm link-light" href="#"><i class="bi-telephone-inbound-fill me-1"></i> +234 9057456389, +234 8099999156</a>
         </p>
         <p class="text-white-50 small">&copy; Copyright {{ Date('Y') }} TOP POINT RECYCLERS. All rights reserved.</p>
       </div>

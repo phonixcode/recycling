@@ -108,7 +108,7 @@
 
               <!-- Form -->
               <div class="mb-3">
-                <label class="form-label" for="hireUsFormDetails">Details</label>
+                <label class="form-label" for="hireUsFormDetails">Message</label>
                 <textarea class="form-control form-control-lg" name="hireUsFormNameDetails" id="hireUsFormDetails" placeholder="Tell us about your ..." aria-label="Tell us about your ..." rows="4"></textarea>
               </div>
               <!-- End Form -->
@@ -117,9 +117,9 @@
                 <button type="submit" class="btn btn-primary btn-lg">Send inquiry</button>
               </div>
 
-              <div class="text-center">
+              {{-- <div class="text-center">
                 <p class="form-text">We'll get back to you in 1-2 business days.</p>
-              </div>
+              </div> --}}
             </form>
             <!-- End Form -->
           </div>
