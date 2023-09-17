@@ -71,7 +71,7 @@
       <nav class="js-mega-menu navbar-nav-wrap">
         <!-- Default Logo -->
         <a class="navbar-brand" href="/" aria-label="Front">
-          <img class="" src="{{ asset('assets/svg/logos/logo.png') }}" alt="Logo" width="150">
+          <img class="" src="{{ asset('assets/svg/logos/logo.png') }}" alt="Logo" width="250">
           {{-- TOP POINT RECYCLERS --}}
         </a>
         <!-- End Default Logo -->
@@ -118,14 +118,14 @@
               <!-- End Company -->
 
               <!-- Pages -->
-              <li class="hs-has-sub-menu nav-item">
-                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link dropdown-toggle" href="#" role="button" aria-expanded="false">Services</a>
+              <li class=" nav-item">
+                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link " href="{{ route('service') }}" role="button" aria-expanded="false">Services</a>
 
                 <!-- Mega Menu -->
                 <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 14rem;">
-                  <a class="dropdown-item " href="{{ route('recyclables-pick-up') }}">Recyclables Pick Up</a>
+                  {{-- <a class="dropdown-item " href="{{ route('recyclables-pick-up') }}">Recyclables Pick Up</a>
                   <a class="dropdown-item " href="#">Recyclables Drop Off</a>
-                  <a class="dropdown-item " href="#">Corporate Services</a>
+                  <a class="dropdown-item " href="#">Corporate Services</a> --}}
                 </div>
                 <!-- End Mega Menu -->
               </li>
@@ -144,7 +144,7 @@
               <!-- End Blog -->
 
               <!-- Portfolio -->
-              <li class=" nav-item">
+              {{-- <li class=" nav-item">
                 <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link  " href="{{ route('portfolio') }}" role="button" aria-expanded="false">Portfolio</a>
 
                 <!-- Mega Menu -->
@@ -152,7 +152,7 @@
 
                 </div>
                 <!-- End Mega Menu -->
-              </li>
+              </li> --}}
               <!-- End Portfolio -->
               <li class=" nav-item">
                 <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link  " href="{{ route('contact') }}" role="button" aria-expanded="false">Contact</a>
