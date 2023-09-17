@@ -46,6 +46,7 @@
     </div>
     <!-- End Hero -->
 
+
     <!-- Gallery -->
     <div class="container content-space-t-3 content-space-t-lg-5">
         <div class="w-lg-75 mx-lg-auto">
@@ -72,19 +73,19 @@
 
         <div class="row gx-3">
             <div class="col mb-3">
-                <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img17.jpg); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/pet2.jpg') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
 
             <div class="col-3 d-none d-md-block mb-3">
-                <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img6.jpg); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/pet3.jpg') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
 
             <div class="col mb-3">
-                <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img14.jpg); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/pet4.jpg') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
@@ -92,19 +93,19 @@
             <div class="w-100"></div>
 
             <div class="col mb-3 mb-md-0">
-                <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img25.jpg); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/BROWN-PET-FLAKES-1000x750.jpg') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
 
             <div class="col-4 d-none d-md-block mb-3 mb-md-0">
-                <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img16.jpg); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/PET-Grind-e1632490444178.jpg') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
 
             <div class="col">
-                <div class="bg-img-start" style="background-image: url(./assets/img/480x320/img12.jpg); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/green-pellets.png') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
