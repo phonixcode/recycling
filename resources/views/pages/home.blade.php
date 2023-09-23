@@ -3,14 +3,18 @@
 @section('content')
 <main id="content" role="main">
     <!-- Hero -->
-    <div class="position-relative bg-primary overflow-hidden">
+    <div class="position-relative overflow-hidden" style="
+    background-blend-mode: multiply;
+    background-image: url(/_nuxt/img/woman_sorting.00d8e69.png),linear-gradient(rgb(50 139 48),rgb(126 190 38));
+    background-repeat: no-repeat;
+">
         <div class="container position-relative zi-2 content-space-3 content-space-md-5">
             <div class="w-md-75 w-xl-65 text-center mx-md-auto">
                 <!-- Heading -->
                 <div class="mb-7">
                     <h1 class="display-4 text-white text-capitalize mb-4">TOP POINT RECYCLERS</h1>
-                    <p class="lead text-white text-capitalize mb-4">available to assist you in maximizing the value of
-                        your recyclable materials.</p>
+                    {{-- <p class="lead text-white text-capitalize mb-4">available to assist you in maximizing the value of
+                        your recyclable materials.</p> --}}
                 </div>
                 <!-- End Title & Description -->
 
@@ -24,7 +28,7 @@
 
         <!-- Background Shape -->
         <figure class="position-absolute top-0 start-0 w-65">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1246 1078">
+            {{-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1246 1078">
                 <g opacity=".4">
                     <linearGradient id="doubleEllipseTopLeftID1" gradientUnits="userSpaceOnUse" x1="2073.5078"
                         y1="1.7251" x2="2273.4375" y2="1135.5818" gradientTransform="matrix(-1 0 0 1 2600 0)">
@@ -39,7 +43,7 @@
                     </linearGradient>
                     <polygon fill="url(#doubleEllipseTopLeftID2)" points="519.7,0 1039.4,0.6 1246,639.1 725.2,644   " />
                 </g>
-            </svg>
+            </svg> --}}
         </figure>
         <!-- End Background Shape -->
 
@@ -66,7 +70,7 @@
                 <p>Individuals, the government, companies, and landfills account for the majority of the PET plastic garbage we manage.</p>
 
                 <div class="mt-4">
-                    <a class="btn btn-primary btn-transition px-5" href="{{ route('contact') }}">Get in touch</a>
+                    <a class="btn btn-primary btn-transition px-5" href="{{ route('contact') }}" style="background-color: #1c7b33 !important;">Get in touch</a>
                 </div>
             </div>
             <!-- End Col -->
@@ -174,7 +178,7 @@
                     <div class="row align-items-center">
                         <div class="col-10">
                             <div class="card-body">
-                                <h4 class="card-title">COLLECTION</h4>
+                                <h4 class="card-title">Collection</h4>
                             </div>
                         </div>
                         <!-- End Col -->
@@ -195,7 +199,7 @@
                     <div class="row align-items-center">
                         <div class="col-10">
                             <div class="card-body">
-                                <h4 class="card-title">RE-PROCESS </h4>
+                                <h4 class="card-title">Sort </h4>
                             </div>
                         </div>
                         <!-- End Col -->
@@ -216,7 +220,7 @@
                     <div class="row align-items-center">
                         <div class="col-10">
                             <div class="card-body">
-                                <h4 class="card-title">RECYCLE</h4>
+                                <h4 class="card-title">Bale</h4>
                             </div>
                         </div>
                         <div class="col-2 bg-img-end h-100 px-0"
@@ -231,229 +235,6 @@
         <!-- End Row -->
     </div>
 
-    <div class="overflow-hidden">
-        <div class="container position-relative content-space-2 content-space-t-lg-3">
-            <!-- Heading -->
-            <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-                <span class="text-cap">Our Capabilities</span>
-                <h2>We invest heavily in our recycling assets, and we take pride in providing a high-quality service to
-                    our customers.</h2>
-            </div>
-            <!-- End Heading -->
-
-            <div class="row">
-                <div class="col-sm-6 col-md-4 mb-3 mb-md-5">
-                    <!-- Icon Blocks -->
-                    <div class="pe-lg-6">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.3"
-                                d="M16 0.200012H4C1.8 0.200012 0 2.00001 0 4.20001V16.2C0 18.4 1.8 20.2 4 20.2H16C18.2 20.2 20 18.4 20 16.2V4.20001C20 2.00001 18.2 0.200012 16 0.200012ZM15 10.2C15 10.9 14.8 11.6 14.6 12.2H18V16.2C18 17.3 17.1 18.2 16 18.2H12V14.8C11.4 15.1 10.7 15.2 10 15.2C9.3 15.2 8.6 15 8 14.8V18.2H4C2.9 18.2 2 17.3 2 16.2V12.2H5.4C5.1 11.6 5 10.9 5 10.2C5 9.50001 5.2 8.80001 5.4 8.20001H2V4.20001C2 3.10001 2.9 2.20001 4 2.20001H8V5.60001C8.6 5.30001 9.3 5.20001 10 5.20001C10.7 5.20001 11.4 5.40001 12 5.60001V2.20001H16C17.1 2.20001 18 3.10001 18 4.20001V8.20001H14.6C14.8 8.80001 15 9.50001 15 10.2Z"
-                                fill="#035A4B"></path>
-                            <path
-                                d="M12 1.40002C15.4 2.20002 18 4.80003 18.8 8.20003H14.6C14.1 7.00003 13.2 6.10003 12 5.60003V1.40002V1.40002ZM5.40001 8.20003C5.90001 7.00003 6.80001 6.10003 8.00001 5.60003V1.40002C4.60001 2.20002 2.00001 4.80003 1.20001 8.20003H5.40001ZM14.6 12.2C14.1 13.4 13.2 14.3 12 14.8V19C15.4 18.2 18 15.6 18.8 12.2H14.6V12.2ZM8.00001 14.8C6.80001 14.3 5.90001 13.4 5.40001 12.2H1.20001C2.00001 15.6 4.60001 18.2 8.00001 19V14.8V14.8Z"
-                                fill="#035A4B"></path>
-                        </svg>
-
-                        </span>
-
-                        <h4>SHREDDING</h4>
-                        <p>
-                            Shredding is the process of size-reducing materials to allow for further processing of the
-                            material
-                        </p>
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <!-- End Col -->
-
-                <div class="col-sm-6 col-md-4 mb-3 mb-md-5">
-                    <!-- Icon Blocks -->
-                    <div class="pe-lg-6">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.3"
-                                    d="M16 0.200012H4C1.8 0.200012 0 2.00001 0 4.20001V16.2C0 18.4 1.8 20.2 4 20.2H16C18.2 20.2 20 18.4 20 16.2V4.20001C20 2.00001 18.2 0.200012 16 0.200012ZM15 10.2C15 10.9 14.8 11.6 14.6 12.2H18V16.2C18 17.3 17.1 18.2 16 18.2H12V14.8C11.4 15.1 10.7 15.2 10 15.2C9.3 15.2 8.6 15 8 14.8V18.2H4C2.9 18.2 2 17.3 2 16.2V12.2H5.4C5.1 11.6 5 10.9 5 10.2C5 9.50001 5.2 8.80001 5.4 8.20001H2V4.20001C2 3.10001 2.9 2.20001 4 2.20001H8V5.60001C8.6 5.30001 9.3 5.20001 10 5.20001C10.7 5.20001 11.4 5.40001 12 5.60001V2.20001H16C17.1 2.20001 18 3.10001 18 4.20001V8.20001H14.6C14.8 8.80001 15 9.50001 15 10.2Z"
-                                    fill="#035A4B"></path>
-                                <path
-                                    d="M12 1.40002C15.4 2.20002 18 4.80003 18.8 8.20003H14.6C14.1 7.00003 13.2 6.10003 12 5.60003V1.40002V1.40002ZM5.40001 8.20003C5.90001 7.00003 6.80001 6.10003 8.00001 5.60003V1.40002C4.60001 2.20002 2.00001 4.80003 1.20001 8.20003H5.40001ZM14.6 12.2C14.1 13.4 13.2 14.3 12 14.8V19C15.4 18.2 18 15.6 18.8 12.2H14.6V12.2ZM8.00001 14.8C6.80001 14.3 5.90001 13.4 5.40001 12.2H1.20001C2.00001 15.6 4.60001 18.2 8.00001 19V14.8V14.8Z"
-                                    fill="#035A4B"></path>
-                            </svg>
-
-                        </span>
-
-                        <h4>GRINDING</h4>
-                        <p>
-                            Grinding is the process of size-reducing materials to very small pieces that can’t be done
-                            by shredding alone
-                        </p>
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <!-- End Col -->
-
-                <div class="col-sm-6 col-md-4 mb-3 mb-md-5">
-                    <!-- Icon Blocks -->
-                    <div class="pe-lg-6">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.3"
-                                d="M16 0.200012H4C1.8 0.200012 0 2.00001 0 4.20001V16.2C0 18.4 1.8 20.2 4 20.2H16C18.2 20.2 20 18.4 20 16.2V4.20001C20 2.00001 18.2 0.200012 16 0.200012ZM15 10.2C15 10.9 14.8 11.6 14.6 12.2H18V16.2C18 17.3 17.1 18.2 16 18.2H12V14.8C11.4 15.1 10.7 15.2 10 15.2C9.3 15.2 8.6 15 8 14.8V18.2H4C2.9 18.2 2 17.3 2 16.2V12.2H5.4C5.1 11.6 5 10.9 5 10.2C5 9.50001 5.2 8.80001 5.4 8.20001H2V4.20001C2 3.10001 2.9 2.20001 4 2.20001H8V5.60001C8.6 5.30001 9.3 5.20001 10 5.20001C10.7 5.20001 11.4 5.40001 12 5.60001V2.20001H16C17.1 2.20001 18 3.10001 18 4.20001V8.20001H14.6C14.8 8.80001 15 9.50001 15 10.2Z"
-                                fill="#035A4B"></path>
-                            <path
-                                d="M12 1.40002C15.4 2.20002 18 4.80003 18.8 8.20003H14.6C14.1 7.00003 13.2 6.10003 12 5.60003V1.40002V1.40002ZM5.40001 8.20003C5.90001 7.00003 6.80001 6.10003 8.00001 5.60003V1.40002C4.60001 2.20002 2.00001 4.80003 1.20001 8.20003H5.40001ZM14.6 12.2C14.1 13.4 13.2 14.3 12 14.8V19C15.4 18.2 18 15.6 18.8 12.2H14.6V12.2ZM8.00001 14.8C6.80001 14.3 5.90001 13.4 5.40001 12.2H1.20001C2.00001 15.6 4.60001 18.2 8.00001 19V14.8V14.8Z"
-                                fill="#035A4B"></path>
-                        </svg>
-
-                        </span>
-
-                        <h4>DRYING</h4>
-                        <p>
-                            Drying is the process of removing the surface and internal moisture of materials to allow
-                            for further processing
-                        </p>
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <!-- End Col -->
-
-                <div class="col-sm-6 col-md-4 mb-3 mb-md-5">
-                    <!-- Icon Blocks -->
-                    <div class="pe-lg-6">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.3"
-                                    d="M16 0.200012H4C1.8 0.200012 0 2.00001 0 4.20001V16.2C0 18.4 1.8 20.2 4 20.2H16C18.2 20.2 20 18.4 20 16.2V4.20001C20 2.00001 18.2 0.200012 16 0.200012ZM15 10.2C15 10.9 14.8 11.6 14.6 12.2H18V16.2C18 17.3 17.1 18.2 16 18.2H12V14.8C11.4 15.1 10.7 15.2 10 15.2C9.3 15.2 8.6 15 8 14.8V18.2H4C2.9 18.2 2 17.3 2 16.2V12.2H5.4C5.1 11.6 5 10.9 5 10.2C5 9.50001 5.2 8.80001 5.4 8.20001H2V4.20001C2 3.10001 2.9 2.20001 4 2.20001H8V5.60001C8.6 5.30001 9.3 5.20001 10 5.20001C10.7 5.20001 11.4 5.40001 12 5.60001V2.20001H16C17.1 2.20001 18 3.10001 18 4.20001V8.20001H14.6C14.8 8.80001 15 9.50001 15 10.2Z"
-                                    fill="#035A4B"></path>
-                                <path
-                                    d="M12 1.40002C15.4 2.20002 18 4.80003 18.8 8.20003H14.6C14.1 7.00003 13.2 6.10003 12 5.60003V1.40002V1.40002ZM5.40001 8.20003C5.90001 7.00003 6.80001 6.10003 8.00001 5.60003V1.40002C4.60001 2.20002 2.00001 4.80003 1.20001 8.20003H5.40001ZM14.6 12.2C14.1 13.4 13.2 14.3 12 14.8V19C15.4 18.2 18 15.6 18.8 12.2H14.6V12.2ZM8.00001 14.8C6.80001 14.3 5.90001 13.4 5.40001 12.2H1.20001C2.00001 15.6 4.60001 18.2 8.00001 19V14.8V14.8Z"
-                                    fill="#035A4B"></path>
-                            </svg>
-
-                        </span>
-
-                        <h4>EXTRUDING</h4>
-                        <p>Extrusion is the process of melting material in a certain form to allow it to be transformed
-                            into another product</p>
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <!-- End Col -->
-
-                <div class="col-sm-6 col-md-4 mb-3 mb-sm-0">
-                    <!-- Icon Blocks -->
-                    <div class="pe-lg-6">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.3"
-                                    d="M16 0.200012H4C1.8 0.200012 0 2.00001 0 4.20001V16.2C0 18.4 1.8 20.2 4 20.2H16C18.2 20.2 20 18.4 20 16.2V4.20001C20 2.00001 18.2 0.200012 16 0.200012ZM15 10.2C15 10.9 14.8 11.6 14.6 12.2H18V16.2C18 17.3 17.1 18.2 16 18.2H12V14.8C11.4 15.1 10.7 15.2 10 15.2C9.3 15.2 8.6 15 8 14.8V18.2H4C2.9 18.2 2 17.3 2 16.2V12.2H5.4C5.1 11.6 5 10.9 5 10.2C5 9.50001 5.2 8.80001 5.4 8.20001H2V4.20001C2 3.10001 2.9 2.20001 4 2.20001H8V5.60001C8.6 5.30001 9.3 5.20001 10 5.20001C10.7 5.20001 11.4 5.40001 12 5.60001V2.20001H16C17.1 2.20001 18 3.10001 18 4.20001V8.20001H14.6C14.8 8.80001 15 9.50001 15 10.2Z"
-                                    fill="#035A4B"></path>
-                                <path
-                                    d="M12 1.40002C15.4 2.20002 18 4.80003 18.8 8.20003H14.6C14.1 7.00003 13.2 6.10003 12 5.60003V1.40002V1.40002ZM5.40001 8.20003C5.90001 7.00003 6.80001 6.10003 8.00001 5.60003V1.40002C4.60001 2.20002 2.00001 4.80003 1.20001 8.20003H5.40001ZM14.6 12.2C14.1 13.4 13.2 14.3 12 14.8V19C15.4 18.2 18 15.6 18.8 12.2H14.6V12.2ZM8.00001 14.8C6.80001 14.3 5.90001 13.4 5.40001 12.2H1.20001C2.00001 15.6 4.60001 18.2 8.00001 19V14.8V14.8Z"
-                                    fill="#035A4B"></path>
-                            </svg>
-
-                        </span>
-
-                        <h4>PELLETIZING</h4>
-                        <p>Pelletizing takes the melted material from the extrusion process and converts into pellets
-                        </p>
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <!-- End Col -->
-
-                <div class="col-sm-6 col-md-4">
-                    <!-- Icon Blocks -->
-                    <div class="pe-lg-6">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.3"
-                                    d="M16 0.200012H4C1.8 0.200012 0 2.00001 0 4.20001V16.2C0 18.4 1.8 20.2 4 20.2H16C18.2 20.2 20 18.4 20 16.2V4.20001C20 2.00001 18.2 0.200012 16 0.200012ZM15 10.2C15 10.9 14.8 11.6 14.6 12.2H18V16.2C18 17.3 17.1 18.2 16 18.2H12V14.8C11.4 15.1 10.7 15.2 10 15.2C9.3 15.2 8.6 15 8 14.8V18.2H4C2.9 18.2 2 17.3 2 16.2V12.2H5.4C5.1 11.6 5 10.9 5 10.2C5 9.50001 5.2 8.80001 5.4 8.20001H2V4.20001C2 3.10001 2.9 2.20001 4 2.20001H8V5.60001C8.6 5.30001 9.3 5.20001 10 5.20001C10.7 5.20001 11.4 5.40001 12 5.60001V2.20001H16C17.1 2.20001 18 3.10001 18 4.20001V8.20001H14.6C14.8 8.80001 15 9.50001 15 10.2Z"
-                                    fill="#035A4B"></path>
-                                <path
-                                    d="M12 1.40002C15.4 2.20002 18 4.80003 18.8 8.20003H14.6C14.1 7.00003 13.2 6.10003 12 5.60003V1.40002V1.40002ZM5.40001 8.20003C5.90001 7.00003 6.80001 6.10003 8.00001 5.60003V1.40002C4.60001 2.20002 2.00001 4.80003 1.20001 8.20003H5.40001ZM14.6 12.2C14.1 13.4 13.2 14.3 12 14.8V19C15.4 18.2 18 15.6 18.8 12.2H14.6V12.2ZM8.00001 14.8C6.80001 14.3 5.90001 13.4 5.40001 12.2H1.20001C2.00001 15.6 4.60001 18.2 8.00001 19V14.8V14.8Z"
-                                    fill="#035A4B"></path>
-                            </svg>
-
-                        </span>
-
-                        <h4>FILTRATION</h4>
-                        <p>Filtration is the process of removing contaminates in the extrusion process via filter media
-                        </p>
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <!-- Icon Blocks -->
-                    <div class="pe-lg-6">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path opacity="0.3"
-                                    d="M16 0.200012H4C1.8 0.200012 0 2.00001 0 4.20001V16.2C0 18.4 1.8 20.2 4 20.2H16C18.2 20.2 20 18.4 20 16.2V4.20001C20 2.00001 18.2 0.200012 16 0.200012ZM15 10.2C15 10.9 14.8 11.6 14.6 12.2H18V16.2C18 17.3 17.1 18.2 16 18.2H12V14.8C11.4 15.1 10.7 15.2 10 15.2C9.3 15.2 8.6 15 8 14.8V18.2H4C2.9 18.2 2 17.3 2 16.2V12.2H5.4C5.1 11.6 5 10.9 5 10.2C5 9.50001 5.2 8.80001 5.4 8.20001H2V4.20001C2 3.10001 2.9 2.20001 4 2.20001H8V5.60001C8.6 5.30001 9.3 5.20001 10 5.20001C10.7 5.20001 11.4 5.40001 12 5.60001V2.20001H16C17.1 2.20001 18 3.10001 18 4.20001V8.20001H14.6C14.8 8.80001 15 9.50001 15 10.2Z"
-                                    fill="#035A4B"></path>
-                                <path
-                                    d="M12 1.40002C15.4 2.20002 18 4.80003 18.8 8.20003H14.6C14.1 7.00003 13.2 6.10003 12 5.60003V1.40002V1.40002ZM5.40001 8.20003C5.90001 7.00003 6.80001 6.10003 8.00001 5.60003V1.40002C4.60001 2.20002 2.00001 4.80003 1.20001 8.20003H5.40001ZM14.6 12.2C14.1 13.4 13.2 14.3 12 14.8V19C15.4 18.2 18 15.6 18.8 12.2H14.6V12.2ZM8.00001 14.8C6.80001 14.3 5.90001 13.4 5.40001 12.2H1.20001C2.00001 15.6 4.60001 18.2 8.00001 19V14.8V14.8Z"
-                                    fill="#035A4B"></path>
-                            </svg>
-
-                        </span>
-
-                        <h4>CRYSTALLIZATION</h4>
-                        <p>
-                            Crystallization is the process of aligning the polymer chains to allow for further
-                            processing like drying
-                        </p>
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <!-- Icon Blocks -->
-                    <div class="pe-lg-6">
-                        <span class="svg-icon text-primary mb-3">
-                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.3"
-                                d="M16 0.200012H4C1.8 0.200012 0 2.00001 0 4.20001V16.2C0 18.4 1.8 20.2 4 20.2H16C18.2 20.2 20 18.4 20 16.2V4.20001C20 2.00001 18.2 0.200012 16 0.200012ZM15 10.2C15 10.9 14.8 11.6 14.6 12.2H18V16.2C18 17.3 17.1 18.2 16 18.2H12V14.8C11.4 15.1 10.7 15.2 10 15.2C9.3 15.2 8.6 15 8 14.8V18.2H4C2.9 18.2 2 17.3 2 16.2V12.2H5.4C5.1 11.6 5 10.9 5 10.2C5 9.50001 5.2 8.80001 5.4 8.20001H2V4.20001C2 3.10001 2.9 2.20001 4 2.20001H8V5.60001C8.6 5.30001 9.3 5.20001 10 5.20001C10.7 5.20001 11.4 5.40001 12 5.60001V2.20001H16C17.1 2.20001 18 3.10001 18 4.20001V8.20001H14.6C14.8 8.80001 15 9.50001 15 10.2Z"
-                                fill="#035A4B"></path>
-                            <path
-                                d="M12 1.40002C15.4 2.20002 18 4.80003 18.8 8.20003H14.6C14.1 7.00003 13.2 6.10003 12 5.60003V1.40002V1.40002ZM5.40001 8.20003C5.90001 7.00003 6.80001 6.10003 8.00001 5.60003V1.40002C4.60001 2.20002 2.00001 4.80003 1.20001 8.20003H5.40001ZM14.6 12.2C14.1 13.4 13.2 14.3 12 14.8V19C15.4 18.2 18 15.6 18.8 12.2H14.6V12.2ZM8.00001 14.8C6.80001 14.3 5.90001 13.4 5.40001 12.2H1.20001C2.00001 15.6 4.60001 18.2 8.00001 19V14.8V14.8Z"
-                                fill="#035A4B"></path>
-                        </svg>
-
-                        </span>
-
-                        <h4>IV ENHANCEMENT </h4>
-                        <p>
-                            IV Enhancement is the process of raising the intrinsic viscosity of PET to allow it to be
-                            used in different applications
-                        </p>
-                    </div>
-                    <!-- End Icon Blocks -->
-                </div>
-                <!-- End Col -->
-            </div>
-            <!-- End Row -->
-
-            <!-- SVG Shape -->
-            <figure class="position-absolute zi-n1" style="top: -35rem; left: 50rem; width: 62rem; height: 62rem;">
-                <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                    viewBox="0 0 260 260">
-                    <circle fill="#e7eaf3" opacity=".7" cx="130" cy="130" r="130"></circle>
-                </svg>
-            </figure>
-            <!-- End SVG Shape -->
-        </div>
-    </div>
 
     <!-- Mockup -->
     <div class="shape-container">
@@ -499,10 +280,7 @@
                     sell is a reliably high quality.
 
                     Our selling team work with businesses in the Nigeria and overseas to supply the best
-                    recyclable commodities at competitive prices.
-
-                    We sell regrind granules, powders and pellets, if you would like to discuss the supply of
-                    recyclable plastic commodities contact us today.</span>
+                    recyclable commodities at competitive prices.</span>
                 </div>
 
 

@@ -12,7 +12,7 @@
   <link rel="shortcut icon" href="./favicon.ico">
 
   <!-- Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="{{ asset('assets/vendor/bootstrap-icons/font/bootstrap-icons.css') }}">
@@ -21,6 +21,24 @@
 
   <!-- CSS Front Template -->
   <link rel="stylesheet" href="{{ asset('assets/css/theme.min.css') }}">
+
+  <style>
+    body, h1, h2, h3, h4, h5, h6, p, span {
+        font-family: 'Nunito', sans-serif !important;
+    }
+    .navbar.navbar-scrolled.navbar-dark {
+        background-color: #1c7b33 !important;
+    }
+    .btn-primary{
+        background-color: #1c7b33 !important;
+    }
+    .bg-primary{
+         background-blend-mode: multiply;
+        background-image: url(/_nuxt/img/woman_sorting.00d8e69.png),linear-gradient(rgb(50 139 48),rgb(126 190 38));
+        background-repeat: no-repeat;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -71,7 +89,7 @@
       <nav class="js-mega-menu navbar-nav-wrap">
         <!-- Default Logo -->
         <a class="navbar-brand" href="/" aria-label="Front">
-          <img class="" src="{{ asset('assets/svg/logos/logo.png') }}" alt="Logo" width="250">
+          <img class="" src="{{ asset('img/output-onlinejpgtools-removebg-preview.png') }}" alt="Logo" width="250">
           {{-- TOP POINT RECYCLERS --}}
         </a>
         <!-- End Default Logo -->
@@ -119,7 +137,7 @@
 
               <!-- Pages -->
               <li class=" nav-item">
-                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link " href="{{ route('service') }}" role="button" aria-expanded="false">Services</a>
+                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link " href="{{ route('service') }}" role="button" aria-expanded="false">What We Sell</a>
 
                 <!-- Mega Menu -->
                 <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu" style="min-width: 14rem;">
@@ -179,7 +197,7 @@
   <!-- ========== END MAIN CONTENT ========== -->
 
   <!-- ========== FOOTER ========== -->
-  <footer class="bg-dark">
+  <footer class="bg-dark" style="background-color: #1c7b33 !important;">
     <div class="container pb-1 pb-lg-5">
       <div class="row content-space-t-2">
         <div class="col-lg-7 mb-7 mb-lg-0">

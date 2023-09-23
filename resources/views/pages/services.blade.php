@@ -3,12 +3,14 @@
 @section('content')
 <main id="content" role="main">
 
-    <div class="position-relative bg-primary overflow-hidden">
+    <div class="position-relative overflow-hidden" style=" background-blend-mode: multiply;
+    background-image: url(/_nuxt/img/woman_sorting.00d8e69.png),linear-gradient(rgb(50 139 48),rgb(126 190 38));
+    background-repeat: no-repeat;">
         <div class="container position-relative zi-2 content-space-3 content-space-md-5">
             <div class="w-md-75 w-xl-65 text-center mx-md-auto">
                 <!-- Heading -->
                 <div class="mb-7">
-                    <h1 class="display-4 text-white text-capitalize mb-4">Services</h1>
+                    <h1 class="display-4 text-white text-capitalize mb-4">What We Sell</h1>
                     <p class="lead text-white text-capitalize mb-4"></p>
                 </div>
                 <!-- End Title & Description -->
@@ -17,7 +19,7 @@
 
         <!-- Background Shape -->
         <figure class="position-absolute top-0 start-0 w-65">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1246 1078">
+            {{-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1246 1078">
                 <g opacity=".4">
                     <linearGradient id="doubleEllipseTopLeftID1" gradientUnits="userSpaceOnUse" x1="2073.5078"
                         y1="1.7251" x2="2273.4375" y2="1135.5818" gradientTransform="matrix(-1 0 0 1 2600 0)">
@@ -32,7 +34,7 @@
                     </linearGradient>
                     <polygon fill="url(#doubleEllipseTopLeftID2)" points="519.7,0 1039.4,0.6 1246,639.1 725.2,644   " />
                 </g>
-            </svg>
+            </svg> --}}
         </figure>
         <!-- End Background Shape -->
 
@@ -58,15 +60,14 @@
             <div class="col mb-5">
                 <!-- Card -->
                 <div class="card h-100">
-                    <img class="card-img-top" src="{{ asset('img/rigid-plastic-01.jpg') }}" alt="Image Description">
+                    <img class="card-img-top" src="{{ asset('img/869f3eee-0a42-4a74-9894-da20af03b061.jpg') }}" alt="Image Description">
 
                     <div class="card-body">
                         <div class="mb-3">
-                            <span class="text-cap">RIGID PLASTIC</span>
+                            <span class="text-cap">POLYETHYLENE TEREPHTHALATE (PET)</span>
                         </div>
                         <p class="card-text">
-                            Rigid plastics are commonly made up of PP/HDPE also when rigid plastics are mixed together commonly they are difficult to process and recycle due to the complexity of the separation process.
-                            Here at Top Point Recyclers we have been processing rigids in both mixed and segregated forms for the last decade working with local authorities and waste management companies we can offer a complete mixed rigid recycling solution. Get in touch today to find out more.
+                           PET is commonly found in the use of bottle applications, PET can be 100% recycled without ever reaching a landfill. GK Recycling can offer complete a PET recycling whether they are PET bottles, trays, film etc. Contact us to find out more about our PET recycling services.
                         </p>
                     </div>
 
@@ -76,7 +77,7 @@
             </div>
             <!-- End Col -->
 
-            <div class="col mb-5">
+            {{-- <div class="col mb-5">
                 <!-- Card -->
                 <div class="card h-100">
                     <img class="card-img-top" src="{{ asset('img/ldpe-01.jpg') }}" alt="Image Description">
@@ -134,7 +135,7 @@
 
                 </div>
                 <!-- End Card -->
-            </div>
+            </div> --}}
             <!-- End Col -->
         </div>
         <!-- End Row -->

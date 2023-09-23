@@ -21,4 +21,4 @@ Route::get('contact', function () {return view('pages.contact');})->name('contac
 Route::get('terms', function () {return view('pages.terms');})->name('terms');
 Route::get('privacy', function () {return view('pages.privacy');})->name('privacy');
 Route::get('faq', function () {return view('pages.faq');})->name('faq');
-Route::get('service', function () {return view('pages.services');})->name('service');
+Route::get('what-we-sell', function () {return view('pages.services');})->name('service');
