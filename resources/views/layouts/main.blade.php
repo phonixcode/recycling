@@ -57,7 +57,7 @@
     <div class="container navbar-topbar">
       <nav class="js-mega-menu navbar-nav-wrap">
         <!-- Toggler -->
-        
+
         <!-- End Toggler -->
 
         <div id="topbarNavDropdown" class="navbar-nav-wrap-collapse collapse navbar-collapse navbar-topbar-collapse">
@@ -228,11 +228,11 @@
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
               <a class="btn btn-soft-light btn-xs btn-icon" href="#">
-                <i class="bi-facebook"></i>
+                <i class="bi-linkedin"></i>
               </a>
             </li>
 
-            <li class="list-inline-item">
+            {{-- <li class="list-inline-item">
               <a class="btn btn-soft-light btn-xs btn-icon" href="#">
                 <i class="bi-instagram"></i>
               </a>
@@ -248,7 +248,7 @@
               <a class="btn btn-soft-light btn-xs btn-icon" href="#">
                 <i class="bi-youtube"></i>
               </a>
-            </li>
+            </li> --}}
           </ul>
           <!-- End Socials -->
         </div>
