@@ -37,6 +37,11 @@
         background-image: url(/_nuxt/img/woman_sorting.00d8e69.png),linear-gradient(rgb(50 139 48),rgb(126 190 38));
         background-repeat: no-repeat;
     }
+    @media (max-width: 991.98px){
+        .navbar-expand-lg.navbar-dark .navbar-nav, .navbar-expand-lg.navbar-dark .navbar-topbar-collapse {
+            background-color: #1c7b33 !important;
+        }
+    }
   </style>
 
 </head>
@@ -52,18 +57,7 @@
     <div class="container navbar-topbar">
       <nav class="js-mega-menu navbar-nav-wrap">
         <!-- Toggler -->
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="d-flex justify-content-between align-items-center small">
-            <span class="navbar-toggler-text">Topbar</span>
-
-            <span class="navbar-toggler-default">
-              <i class="bi-chevron-down ms-2"></i>
-            </span>
-            <span class="navbar-toggler-toggled">
-              <i class="bi-chevron-up ms-2"></i>
-            </span>
-          </span>
-        </button>
+        
         <!-- End Toggler -->
 
         <div id="topbarNavDropdown" class="navbar-nav-wrap-collapse collapse navbar-collapse navbar-topbar-collapse">

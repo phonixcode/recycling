@@ -18,11 +18,11 @@
                 </div>
                 <!-- End Title & Description -->
 
-                <div class="d-grid d-sm-flex justify-content-center gap-2">
+                {{-- <div class="d-grid d-sm-flex justify-content-center gap-2">
                     <a class="btn btn-light btn-transition px-6" href="{{ route('service') }}">Services</a>
                     <a class="btn text-white" href="{{ route('contact') }}">Get in touch <i
                             class="bi-chevron-right small ms-1"></i></a>
-                </div>
+                </div> --}}
             </div>
         </div>
 
@@ -274,13 +274,9 @@
             <div class="position-relative">
                 <div class="bg-light text-center rounded-2 p-4 p-md-7">
 
-                   <span>Our team ensure that all the recyclable plastics we process are high quality.
-
-                    Our best practices and strict quality control means that the processed recyclable plastic we
-                    sell is a reliably high quality.
-
-                    Our selling team work with businesses in the Nigeria and overseas to supply the best
-                    recyclable commodities at competitive prices.</span>
+                   <span>
+                    Our crew makes sure that every piece of recyclable plastic we gather is of the highest caliber. The recycled plastic that we collect and sell is of consistently high quality thanks to our best practices and stringent quality control. Our sales team collaborates with companies in Nigeria and beyond to deliver the best recyclable goods at affordable pricing.
+                   </span>
                 </div>
 
 
