@@ -19,7 +19,7 @@
 
         <!-- Background Shape -->
         <figure class="position-absolute top-0 start-0 w-65">
-            
+
         </figure>
         <!-- End Background Shape -->
 
@@ -40,7 +40,7 @@
             <!-- Heading -->
             <div class="mb-5 mb-md-10">
                 {{-- <h1 class="display-4">About Us</h1> --}}
-                <p class="lead">
+                <p class="">
                     Top Point Recyclers is a waste recycling, social benefit, and for-profit company that promotes green
                     environment. It operates an incentive-based program that gathers recyclable materials from
                     post-consumers and recycles them.
@@ -60,19 +60,19 @@
 
         <div class="row gx-3">
             <div class="col mb-3">
-                <div class="bg-img-start" style="background-image: url({{ asset('img/pet2.jpg') }}); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/image-11.jpg') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
 
             <div class="col-3 d-none d-md-block mb-3">
-                <div class="bg-img-start" style="background-image: url({{ asset('img/pet3.jpg') }}); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/Where-Does-Plastic-Recycling-Go.jpg') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
 
             <div class="col mb-3">
-                <div class="bg-img-start" style="background-image: url({{ asset('img/pet4.jpg') }}); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/recycle-bail.png') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
@@ -80,19 +80,19 @@
             <div class="w-100"></div>
 
             <div class="col mb-3 mb-md-0">
-                <div class="bg-img-start" style="background-image: url({{ asset('img/BROWN-PET-FLAKES-1000x750.jpg') }}); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/woman_sorting.00d8e69.png') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
 
             <div class="col-4 d-none d-md-block mb-3 mb-md-0">
-                <div class="bg-img-start" style="background-image: url({{ asset('img/PET-Grind-e1632490444178.jpg') }}); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/XC3A6S4EX5BVBBOUIFFKGBFWIY.jpg') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
 
             <div class="col">
-                <div class="bg-img-start" style="background-image: url({{ asset('img/green-pellets.png') }}); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/SEI_129262540.jpg') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
