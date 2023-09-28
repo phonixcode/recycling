@@ -166,73 +166,97 @@
     </div>
     <!-- End Features -->
 
-    <div class="container mb-3">
-        <!-- Heading -->
+    <div class="container content-space-2">
+      {{-- <!-- Heading -->
+      <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+        <span class="text-cap">Platforms</span>
+        <h2 class="h1">Three platforms – handled by one tool</h2>
+      </div>
+      <!-- End Heading --> --}}
 
-        <!-- End Heading -->
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-5 mb-lg-0">
+          <!-- Card -->
+          <a class="card card-lg card-transition h-100 text-center" href="#">
+            <div class="card-body">
+              <div class="mb-4">
+                <img class="avatar" src="{{ asset('img/download.jpg') }}" alt="Logo">
+              </div>
+              <h3 class="card-title">Collection</h3>
+              <p class="card-text text-body">To collect and treat used objects and materials that are ready to be thrown out in order to produce materials that can be used again.</p>
+            </div>
 
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6 col-lg-4 mb-4 mb-md-5 mb-lg-0">
+          <!-- Card -->
+          <a class="card card-lg card-transition h-100 text-center" href="#">
+            <div class="card-body">
+              <div class="mb-4">
+                <img class="avatar" src="{{ asset('img/images.png') }}" alt="Logo">
+              </div>
+              <h3 class="card-title">Sort</h3>
+              <p class="card-text text-body">The best scripts alternative and quick reports for the whole team.</p>
+            </div>
+
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+
+        <div class="col-md-6 col-lg-4">
+          <!-- Card -->
+          <a class="card card-lg card-transition h-100 text-center" href="#">
+            <div class="card-body">
+              <div class="mb-4">
+                <img class="avatar" src="{{ asset('img/images (1).png') }}" alt="Logo">
+              </div>
+              <h3 class="card-title">Bale</h3>
+              <p class="card-text text-body">
+                A waste baler can reduce a large volume of trash or recycling to a fraction of its original size
+            </p>
+            </div>
+
+          </a>
+          <!-- End Card -->
+        </div>
+        <!-- End Col -->
+      </div>
+      <!-- End Row -->
+    </div>
+
+    <div class="container content-space-b-2 content-space-b-lg-3">
+      <div class="w-lg-75 mx-lg-auto">
         <div class="row">
-            <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
-                <!-- Card -->
-                <a class="card card-transition bg-light h-100 shadow-none overflow-hidden" href="#">
-                    <div class="row align-items-center">
-                        <div class="col-10">
-                            <div class="card-body">
-                                <h4 class="card-title">Collection</h4>
-                            </div>
-                        </div>
-                        <!-- End Col -->
-
-                        <div class="col-2 bg-img-end h-100 px-0"
-                            style=""></div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Row -->
-                </a>
-                <!-- End Card -->
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="text-center">
+              <h5 class="h1">500+</h5>
+              <p>Total Operation</p>
             </div>
-            <!-- End Col -->
+          </div>
+          <!-- End Col -->
 
-            <div class="col-sm-6 col-lg-4 mb-3 mb-lg-0">
-                <!-- Card -->
-                <a class="card card-transition bg-light h-100 shadow-none overflow-hidden" href="#">
-                    <div class="row align-items-center">
-                        <div class="col-10">
-                            <div class="card-body">
-                                <h4 class="card-title">Sort </h4>
-                            </div>
-                        </div>
-                        <!-- End Col -->
-
-                        <div class="col-2 bg-img-end h-100 px-0"
-                            style=""></div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Row -->
-                </a>
-                <!-- End Card -->
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="text-center">
+              <h5 class="h1">50+</h5>
+              <p>Staffs</p>
             </div>
-            <!-- End Col -->
+          </div>
+          <!-- End Col -->
 
-            <div class="col-sm-6 col-lg-4">
-                <!-- Card -->
-                <a class="card card-transition bg-light h-100 shadow-none overflow-hidden" href="#">
-                    <div class="row align-items-center">
-                        <div class="col-10">
-                            <div class="card-body">
-                                <h4 class="card-title">Bale</h4>
-                            </div>
-                        </div>
-                        <div class="col-2 bg-img-end h-100 px-0"
-                            style=""></div>
-                    </div>
-                    <!-- End Row -->
-                </a>
-                <!-- End Card -->
+          <div class="col-sm-4">
+            <div class="text-center">
+              <h5 class="h1">30</h5>
+              <p>Area of Operation</p>
             </div>
-            <!-- End Col -->
+          </div>
+          <!-- End Col -->
         </div>
         <!-- End Row -->
+      </div>
     </div>
 
 
