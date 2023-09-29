@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>{{ $ticket->subject }}</title>
+    <title>Contact Form Submission</title>
     <style>
       /* -------------------------------------
           GLOBAL RESETS
@@ -350,9 +350,10 @@
                       <td>
                         <p>Hi Admin,</p>
                         <p> You have received a new contact form submission with the following details:  </p>
-                        <p>Name: {{ $ticket->name }}</p>
-                        <p>Email: {{ $ticket->email }}</p>
-                        <p>Message: {{ $ticket->message }}</p>
+                        <p>Name: {{ $ticket['name'] }}</p>
+                        <p>Email: {{ $ticket['email'] }}</p>
+                        <p>Phone: {{ $ticket['phone'] }}</p>
+                        <p>Message: {{ $ticket['message'] }}</p>
 
                         <p>Please take appropriate action.</p>
                         <p>Thank you.</p>

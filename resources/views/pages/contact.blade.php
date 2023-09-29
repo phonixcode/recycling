@@ -54,15 +54,15 @@
 
                         <!-- Form -->
                         <form>
+                            @csrf
                             <div class="row gx-3">
 
                                 <div class="col-sm-12">
                                     <!-- Form -->
                                     <div class="mb-3">
                                         <label class="form-label" for="hireUsFormLasttName">Name</label>
-                                        <input type="text" class="form-control form-control-lg"
-                                            name="hireUsFormNameLastName" id="hireUsFormLasttName" placeholder="name"
-                                            aria-label="name">
+                                        <input type="text" class="form-control form-control-lg" name="name"
+                                            id="hireUsFormLasttName" placeholder="name" aria-label="name">
                                     </div>
                                     <!-- End Form -->
                                 </div>
@@ -75,9 +75,9 @@
                                     <!-- Form -->
                                     <div class="mb-3">
                                         <label class="form-label" for="hireUsFormWorkEmail">Email address</label>
-                                        <input type="email" class="form-control form-control-lg"
-                                            name="hireUsFormNameWorkEmail" id="hireUsFormWorkEmail"
-                                            placeholder="email@site.com" aria-label="email@site.com">
+                                        <input type="email" class="form-control form-control-lg" name="email"
+                                            id="hireUsFormWorkEmail" placeholder="email@site.com"
+                                            aria-label="email@site.com">
                                     </div>
                                     <!-- End Form -->
                                 </div>
@@ -88,8 +88,8 @@
                                     <div class="mb-3">
                                         <label class="form-label" for="hireUsFormPhone">Phone <span
                                                 class="form-label-secondary"></span></label>
-                                        <input type="text" class="form-control form-control-lg"
-                                            name="hireUsFormNamePhone" id="hireUsFormPhone" placeholder="+x(xxx)xxx-xx-xx"
+                                        <input type="text" class="form-control form-control-lg" name="phone"
+                                            id="hireUsFormPhone" placeholder="+x(xxx)xxx-xx-xx"
                                             aria-label="+x(xxx)xxx-xx-xx">
                                     </div>
                                     <!-- End Form -->
@@ -101,7 +101,7 @@
                             <!-- Form -->
                             <div class="mb-3">
                                 <label class="form-label" for="hireUsFormDetails">Message</label>
-                                <textarea class="form-control form-control-lg" name="hireUsFormNameDetails" id="hireUsFormDetails"
+                                <textarea class="form-control form-control-lg" name="message" id="hireUsFormDetails"
                                     placeholder="Tell us about your ..." aria-label="Tell us about your ..." rows="4"></textarea>
                             </div>
                             <!-- End Form -->
@@ -109,10 +109,6 @@
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-primary btn-lg">Send inquiry</button>
                             </div>
-
-                            {{-- <div class="text-center">
-                <p class="form-text">We'll get back to you in 1-2 business days.</p>
-              </div> --}}
                         </form>
                         <!-- End Form -->
                     </div>
@@ -123,3 +119,40 @@
         <!-- End Contact Form -->
     </main>
 @endsection
+
+@push('js')
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('form').on('submit', function(event) {
+                event.preventDefault();
+
+                var $submitButton = $('button[type="submit"]');
+                $submitButton.text('Sending...');
+
+                var csrfToken = $('meta[name="csrf-token"]').attr('content'); // Get the CSRF token value
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/send-email', // Replace with your route
+                    data: $(this).serialize(),
+                    headers: {
+                        'X-CSRF-TOKEN': csrfToken // Include the CSRF token in the headers
+                    },
+                    success: function(response) {
+                        $submitButton.text('Sent');
+                        // Handle success, e.g., display a success message
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        $submitButton.text('Send Failed');
+                        // Handle error, e.g., display the error message
+                        var errorMessage = JSON.parse(jqXHR.responseText).error;
+                        console.error('Email send error:', errorMessage);
+                        // Display the error message to the user, e.g., using an alert or a message element
+                    }
+                });
+            });
+        });
+    </script>
+@endpush
