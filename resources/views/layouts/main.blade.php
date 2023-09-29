@@ -219,7 +219,7 @@
     @yield('content')
     <!-- ========== END MAIN CONTENT ========== -->
 
-    <div class="bg-light overflow-hidden" style="background-image: url({{ asset('img/footer-bg.6aa85ed.svg') }}); height: 516px;">
+    <div class="bg-light overflow-hidden" style="background-image: url({{ asset('img/footer-bg.6aa85ed.svg') }}); height: 300px;">
         <div class="container content-space-2 content-space-lg-3">
             <div class="position-relative">
                 <!-- End Row -->

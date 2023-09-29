@@ -166,6 +166,18 @@
     </div>
     <!-- End Features -->
 
+    <div class="bg-img-center" style="background-image: url(../assets/img/1920x800/img8.jpg);">
+      <div class="container content-space-2 content-space-lg-3">
+        <div class="w-md-65 w-lg-35">
+          <div class="mb-4">
+            {{-- <h2 class="h1 text-white">Wear your pride</h2> --}}
+            <p class="text-white">Outdo the sun and refresh your workout with greys, whites and dark brights.</p>
+          </div>
+          {{-- <a class="btn btn-light btn-transition rounded-pill" href="#">Shop the collection</a> --}}
+        </div>
+      </div>
+    </div>
+
     <div class="container content-space-2">
       {{-- <!-- Heading -->
       <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
@@ -259,9 +271,8 @@
       </div>
     </div>
 
-
     <!-- Mockup -->
-    <div class="shape-container">
+    <div class="shape-container mb-3">
         <div class="container">
 
             <div class="video-bg">
@@ -284,16 +295,30 @@
         </div>
 
         <!-- Shape -->
-        <div class="shape shape-bottom zi-3">
+        {{-- <div class="shape shape-bottom zi-3">
             <svg width="3000" height="500" viewBox="0 0 3000 500" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0 500H3000V0L0 500Z" fill="#fff" />
             </svg>
-        </div>
+        </div> --}}
         <!-- End Shape -->
     </div>
     <!-- End Mockup -->
 
-    <div class="overflow-hidden">
+    <div class="bg-img-center" style="background-image: url(../assets/img/1920x800/img8.jpg);">
+      <div class="container content-space-2 content-space-lg-3">
+        <div class="w-md-65 w-lg-35">
+          <div class="mb-4">
+            {{-- <h2 class="h1 text-white">Wear your pride</h2> --}}
+            <p class="text-white">
+                Our crew makes sure that every piece of recyclable plastic we gather is of the highest caliber. The recycled plastic that we collect and sell is of consistently high quality thanks to our best practices and stringent quality control. Our sales team collaborates with companies in Nigeria and beyond to deliver the best recyclable goods at affordable pricing.
+            </p>
+          </div>
+          {{-- <a class="btn btn-light btn-transition rounded-pill" href="#">Shop the collection</a> --}}
+        </div>
+      </div>
+    </div>
+
+    {{-- <div class="overflow-hidden">
         <div class="container content-space-b-2">
             <div class="position-relative">
                 <div class="bg-light text-center rounded-2 p-4 p-md-7">
@@ -306,7 +331,7 @@
 
             </div>
         </div>
-    </div>
+    </div> --}}
 
 </main>
 @endsection
