@@ -64,11 +64,7 @@
                 <div class="mb-3">
                     <h2 class="h1">Top Point Recyclers</h2>
                 </div>
-
-                <p>Top Point Recyclers is a waste recycling, social benefit, and for-profit company that promotes green environment. It operates an incentive-based program that gathers recyclable materials from post-consumers and recycles them.</p>
-
-                <p>Individuals, the government, companies, and landfills account for the majority of the PET plastic garbage we manage.</p>
-
+                <p>Top Point Recyclers is a for-profit company that runs an incentive-based recycling program, focusing on PET plastic waste. They recycle and export products globally, serving clients in Nigeria's manufacturing industry while also creating jobs and empowering local youth and women.</p>
                 <div class="mt-4">
                     <a class="btn btn-primary btn-transition px-5" href="{{ route('contact') }}" style="background-color: #1c7b33 !important;">Get in touch</a>
                 </div>
@@ -90,7 +86,7 @@
                                     <use xlink:href="#circleImgID2" />
                                 </clipPath>
                                 <g clip-path="url(#circleImgID1)">
-                                    <image width="450" height="450" xlink:href="{{ asset('img/pet4.jpg') }}"></image>
+                                    <image width="450" height="450" xlink:href="{{ asset('img/Where-Does-Plastic-Recycling-Go.jpg') }}"></image>
                                 </g>
                             </g>
                         </svg>
@@ -116,7 +112,7 @@
                                     <use xlink:href="#circleImgID4" />
                                 </clipPath>
                                 <g clip-path="url(#circleImgID3)">
-                                    <image width="515" height="515" xlink:href="{{ asset('img/pet3.jpg') }}"
+                                    <image width="515" height="515" xlink:href="{{ asset('img/image-11.jpg') }}"
                                         transform="matrix(1 0 0 1 1.639390e-02 2.880859e-02)"></image>
                                 </g>
                             </g>
@@ -151,7 +147,7 @@
                                     <use xlink:href="#circleImgID6" />
                                 </clipPath>
                                 <g clip-path="url(#circleImgID5)">
-                                    <image width="900" height="900" xlink:href="{{ asset('img/pet2.jpg') }}"
+                                    <image width="900" height="900" xlink:href="{{ asset('img/recycle-bail.png') }}"
                                         transform="matrix(1 0 0 1 -64.8123 -64.8055)"></image>
                                 </g>
                             </g>
