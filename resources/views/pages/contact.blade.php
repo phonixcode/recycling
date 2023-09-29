@@ -46,7 +46,7 @@
                                 If you would like to discuss how we could help
                                 you with plastic waste or you are looking for
                                 suppliers of processed plastic, please contact
-                                us on <b>+234 8099999156</b> or via the contact form
+                                us on <b>+ 2349057456389</b> or via the contact form
                                 below.
                             </p>
                         </div>

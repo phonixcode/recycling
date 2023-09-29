@@ -192,7 +192,7 @@
           <a class="card card-lg card-transition h-100 text-center" href="#">
             <div class="card-body">
               <div class="mb-4">
-                <img class="avatar" src="{{ asset('img/download.jpg') }}" alt="Logo">
+                <img class="avatar" src="{{ asset('img/images (1).png') }}" alt="Logo">
               </div>
               <h3 class="card-title">Collection</h3>
               <p class="card-text text-body">To collect and treat used objects and materials that are ready to be thrown out in order to produce materials that can be used again.</p>
@@ -224,7 +224,7 @@
           <a class="card card-lg card-transition h-100 text-center" href="#">
             <div class="card-body">
               <div class="mb-4">
-                <img class="avatar" src="{{ asset('img/images (1).png') }}" alt="Logo">
+                <img class="avatar" src="{{ asset('img/download.jpg') }}" alt="Logo">
               </div>
               <h3 class="card-title">Bale</h3>
               <p class="card-text text-body">
