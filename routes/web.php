@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,3 +23,5 @@ Route::get('terms', function () {return view('pages.terms');})->name('terms');
 Route::get('privacy', function () {return view('pages.privacy');})->name('privacy');
 Route::get('faq', function () {return view('pages.faq');})->name('faq');
 Route::get('what-we-sell', function () {return view('pages.services');})->name('service');
+
+Route::post('/send-email', [MailController::class, 'contactSubmit'])->name('send.email');
