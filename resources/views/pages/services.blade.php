@@ -1,25 +1,26 @@
 @extends('layouts.main')
 
 @section('content')
-<main id="content" role="main">
+    <main id="content" role="main">
 
-    <div class="position-relative overflow-hidden" style=" background-blend-mode: multiply;
+        <div class="position-relative overflow-hidden"
+            style=" background-blend-mode: multiply;
     background-image: url(/_nuxt/img/woman_sorting.00d8e69.png),linear-gradient(rgb(50 139 48),rgb(126 190 38));
     background-repeat: no-repeat;">
-        <div class="container position-relative zi-2 content-space-3 content-space-md-5">
-            <div class="w-md-75 w-xl-65 text-center mx-md-auto">
-                <!-- Heading -->
-                <div class="mb-7">
-                    <h1 class="display-4 text-white text-capitalize mb-4">What We Sell</h1>
-                    <p class="lead text-white text-capitalize mb-4"></p>
+            <div class="container position-relative zi-2 content-space-3 content-space-md-5">
+                <div class="w-md-75 w-xl-65 text-center mx-md-auto">
+                    <!-- Heading -->
+                    <div class="mb-7">
+                        <h1 class="display-4 text-white text-capitalize mb-4">What We Sell</h1>
+                        <p class="lead text-white text-capitalize mb-4"></p>
+                    </div>
+                    <!-- End Title & Description -->
                 </div>
-                <!-- End Title & Description -->
             </div>
-        </div>
 
-        <!-- Background Shape -->
-        <figure class="position-absolute top-0 start-0 w-65">
-            {{-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1246 1078">
+            <!-- Background Shape -->
+            <figure class="position-absolute top-0 start-0 w-65">
+                {{-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1246 1078">
                 <g opacity=".4">
                     <linearGradient id="doubleEllipseTopLeftID1" gradientUnits="userSpaceOnUse" x1="2073.5078"
                         y1="1.7251" x2="2273.4375" y2="1135.5818" gradientTransform="matrix(-1 0 0 1 2600 0)">
@@ -35,49 +36,52 @@
                     <polygon fill="url(#doubleEllipseTopLeftID2)" points="519.7,0 1039.4,0.6 1246,639.1 725.2,644   " />
                 </g>
             </svg> --}}
-        </figure>
-        <!-- End Background Shape -->
+            </figure>
+            <!-- End Background Shape -->
 
-        <!-- Shape -->
-        <div class="shape shape-bottom zi-1" style="margin-bottom: -.125rem">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
-                <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
-            </svg>
-        </div>
-        <!-- End Shape -->
-    </div>
-
-    <!-- Clients -->
-    <div class="container content-space-2 content-space-lg-3">
-        <!-- Heading -->
-        <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-            <span class="text-cap">Products for Your Needs</span>
-            {{-- <span>We offer our customers the most comprehensive multitude of raw materials in the industry, including virgin and recycled thermoplastic resins ranging from polyethylene terephthalate (PET) to polypropylene (PP) to polyethylene (PE) to polystyrene (PS). Throughout our manufacturing operations, we use state-of-the-art processing technology and equipment to continuously deliver the highest-quality products for our customers</span> --}}
-        </div>
-        <!-- End Heading -->
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
-            <div class="col mb-5">
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="{{ asset('img/869f3eee-0a42-4a74-9894-da20af03b061.jpg') }}" alt="Image Description">
-
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <span class="text-cap">POLYETHYLENE TEREPHTHALATE (PET)</span>
-                        </div>
-                        <p class="card-text">
-                           PET is commonly found in the use of bottle applications, PET can be 100% recycled without ever reaching a landfill. GK Recycling can offer complete a PET recycling whether they are PET bottles, trays, film etc. Contact us to find out more about our PET recycling services.
-                        </p>
-                    </div>
-
-
-                </div>
-                <!-- End Card -->
+            <!-- Shape -->
+            <div class="shape shape-bottom zi-1" style="margin-bottom: -.125rem">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1920 100.1">
+                    <path fill="#fff" d="M0,0c0,0,934.4,93.4,1920,0v100.1H0L0,0z"></path>
+                </svg>
             </div>
-            <!-- End Col -->
+            <!-- End Shape -->
+        </div>
 
-            {{-- <div class="col mb-5">
+        <!-- Clients -->
+        <div class="container content-space-2 content-space-lg-3">
+            <!-- Heading -->
+            <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
+                <span class="text-cap">Products for Your Needs</span>
+                {{-- <span>We offer our customers the most comprehensive multitude of raw materials in the industry, including virgin and recycled thermoplastic resins ranging from polyethylene terephthalate (PET) to polypropylene (PP) to polyethylene (PE) to polystyrene (PS). Throughout our manufacturing operations, we use state-of-the-art processing technology and equipment to continuously deliver the highest-quality products for our customers</span> --}}
+            </div>
+            <!-- End Heading -->
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <img class="card-img-top" src="{{ asset('img/869f3eee-0a42-4a74-9894-da20af03b061.jpg') }}"
+                            alt="Image Description">
+
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="text-cap">POLYETHYLENE TEREPHTHALATE (PET)</span>
+                            </div>
+                            <p class="card-text">
+                                PET is commonly found in the use of bottle applications, PET can be 100% recycled without
+                                ever reaching a landfill. GK Recycling can offer complete a PET recycling whether they are
+                                PET bottles, trays, film etc. Contact us to find out more about our PET recycling services.
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                {{-- <div class="col mb-5">
                 <!-- Card -->
                 <div class="card h-100">
                     <img class="card-img-top" src="{{ asset('img/ldpe-01.jpg') }}" alt="Image Description">
@@ -136,10 +140,61 @@
                 </div>
                 <!-- End Card -->
             </div> --}}
-            <!-- End Col -->
+                <!-- End Col -->
+            </div>
+
+            <div class="container content-space-t-3 content-space-t-lg-5">
+                
+
+                <div class="row gx-3">
+                    <div class="col mb-3">
+                        <div class="bg-img-start"
+                            style="background-image: url({{ asset('img/image-11.jpg') }}); height: 15rem;">
+                        </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-3 d-none d-md-block mb-3">
+                        <div class="bg-img-start"
+                            style="background-image: url({{ asset('img/Where-Does-Plastic-Recycling-Go.jpg') }}); height: 15rem;">
+                        </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col mb-3">
+                        <div class="bg-img-start"
+                            style="background-image: url({{ asset('img/recycle-bail.png') }}); height: 15rem;">
+                        </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="w-100"></div>
+
+                    <div class="col mb-3 mb-md-0">
+                        <div class="bg-img-start"
+                            style="background-image: url({{ asset('img/woman_sorting.00d8e69.png') }}); height: 15rem;">
+                        </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-4 d-none d-md-block mb-3 mb-md-0">
+                        <div class="bg-img-start"
+                            style="background-image: url({{ asset('img/XC3A6S4EX5BVBBOUIFFKGBFWIY.jpg') }}); height: 15rem;">
+                        </div>
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col">
+                        <div class="bg-img-start"
+                            style="background-image: url({{ asset('img/SEI_129262540.jpg') }}); height: 15rem;">
+                        </div>
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+            <!-- End Row -->
         </div>
-        <!-- End Row -->
-    </div>
-    <!-- End Clients -->
-</main>
+        <!-- End Clients -->
+    </main>
 @endsection
