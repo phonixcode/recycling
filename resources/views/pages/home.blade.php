@@ -12,7 +12,7 @@
             <div class="w-md-75 w-xl-65 text-center mx-md-auto">
                 <!-- Heading -->
                 <div class="mb-7">
-                    <h1 class="display-4 text-white text-capitalize mb-4">TOP POINT RECYCLERS</h1>
+                    <h1 class="display-4 text-white text-capitalize mb-4"><b>RECYCLE NOW FOR A BETTER TOMORROW</b></h1>
                     {{-- <p class="lead text-white text-capitalize mb-4">available to assist you in maximizing the value of
                         your recyclable materials.</p> --}}
                 </div>
@@ -62,7 +62,7 @@
         <div class="row justify-content-lg-between align-items-lg-center">
             <div class="col-lg-5 mb-9 mb-lg-0">
                 <div class="mb-3">
-                    <h2 class="h1">Top Point Recyclers</h2>
+                    <h2 class="h1">Recycle Now For a Better Tomorrow</h2>
                 </div>
                 <p>Top Point Recyclers is a for-profit company that runs an incentive-based recycling program, focusing on PET plastic waste. They recycle and export products globally, serving clients in Nigeria's manufacturing industry while also creating jobs and empowering local youth and women.</p>
                 <div class="mt-4">
