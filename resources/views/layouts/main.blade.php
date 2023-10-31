@@ -163,36 +163,10 @@
                                 <!-- Mega Menu -->
                                 <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu"
                                     style="min-width: 14rem;">
-                                    {{-- <a class="dropdown-item " href="{{ route('recyclables-pick-up') }}">Recyclables Pick Up</a>
-                  <a class="dropdown-item " href="#">Recyclables Drop Off</a>
-                  <a class="dropdown-item " href="#">Corporate Services</a> --}}
                                 </div>
                                 <!-- End Mega Menu -->
                             </li>
                             <!-- End Pages -->
-
-                            <!-- Blog -->
-                            {{-- <li class=" nav-item">
-                <a id="blogMegaMenu" class="hs-mega-menu-invoker nav-link " href="{{ route('bog') }}" role="button" aria-expanded="false">Blog</a>
-
-                <!-- Mega Menu -->
-                <div class="hs-sub-menu dropdown-menu" aria-labelledby="blogMegaMenu" style="min-width: 14rem;">
-
-                </div>
-                <!-- End Mega Menu -->
-              </li> --}}
-                            <!-- End Blog -->
-
-                            <!-- Portfolio -->
-                            {{-- <li class=" nav-item">
-                <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link  " href="{{ route('portfolio') }}" role="button" aria-expanded="false">Portfolio</a>
-
-                <!-- Mega Menu -->
-                <div class="hs-sub-menu dropdown-menu" aria-labelledby="portfolioMegaMenu" style="min-width: 14rem;">
-
-                </div>
-                <!-- End Mega Menu -->
-              </li> --}}
                             <!-- End Portfolio -->
                             <li class=" nav-item">
                                 <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link  "
@@ -213,6 +187,129 @@
             </nav>
         </div>
     </header>
+
+    <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light bg-white" hsheader="true">
+    <!-- Topbar -->
+    <div class="container navbar-topbar">
+      <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
+        <!-- Toggler -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="d-flex justify-content-between align-items-center small">
+            <span class="navbar-toggler-text">Topbar</span>
+
+            <span class="navbar-toggler-default">
+              <i class="bi-chevron-down ms-2"></i>
+            </span>
+            <span class="navbar-toggler-toggled">
+              <i class="bi-chevron-up ms-2"></i>
+            </span>
+          </span>
+        </button>
+        <!-- End Toggler -->
+
+        <div id="topbarNavDropdown" class="navbar-nav-wrap-collapse collapse navbar-collapse navbar-topbar-collapse">
+          <div class="navbar-toggler-wrapper">
+            <div class="navbar-topbar-toggler d-flex justify-content-between align-items-center">
+              <span class="navbar-toggler-text small">Topbar</span>
+
+              <!-- Toggler -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi-x"></i>
+              </button>
+              <!-- End Toggler -->
+            </div>
+          </div>
+
+
+        </div>
+      </nav>
+    </div>
+    <!-- End Topbar -->
+
+    <div class="container">
+      <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
+        <!-- Default Logo -->
+        <a class="navbar-brand" href="./index.html" aria-label="Front">
+          <img class="navbar-brand-logo" src="{{ asset('img/output-onlinejpgtools-removebg-preview.png') }}"
+                        alt="Logo" width="250" alt="Logo">
+        </a>
+        <!-- End Default Logo -->
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-default">
+            <i class="bi-list"></i>
+          </span>
+          <span class="navbar-toggler-toggled">
+            <i class="bi-x"></i>
+          </span>
+        </button>
+        <!-- End Toggler -->
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+                            <!-- Landings -->
+                            <li class="nav-item">
+                                <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link active"
+                                    aria-current="page" href="{{ route('home') }}" role="button" aria-expanded="false">
+                                    Home
+                                </a>
+
+                                <!-- Mega Menu -->
+                                <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="landingsMegaMenu"
+                                    style="min-width: 30rem;">
+
+                                </div>
+                                <!-- End Mega Menu -->
+                            </li>
+                            <!-- End Landings -->
+
+                            <!-- Company -->
+                            <li class=" nav-item">
+                                <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link "
+                                    href="{{ route('about') }}" role="button" aria-expanded="false">About Us</a>
+
+                                <!-- Mega Menu -->
+                                <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu"
+                                    style="min-width: 14rem;">
+
+                                </div>
+                                <!-- End Mega Menu -->
+                            </li>
+                            <!-- End Company -->
+
+                            <!-- Pages -->
+                            <li class=" nav-item">
+                                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link "
+                                    href="{{ route('service') }}" role="button" aria-expanded="false">What We Sell</a>
+
+                                <!-- Mega Menu -->
+                                <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu"
+                                    style="min-width: 14rem;">
+                                </div>
+                                <!-- End Mega Menu -->
+                            </li>
+                            <!-- End Pages -->
+                            <!-- End Portfolio -->
+                            <li class=" nav-item">
+                                <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link  "
+                                    href="{{ route('contact') }}" role="button" aria-expanded="false">Contact</a>
+
+                                <!-- Mega Menu -->
+                                <div class="hs-sub-menu dropdown-menu" aria-labelledby="portfolioMegaMenu"
+                                    style="min-width: 14rem;">
+
+                                </div>
+                                <!-- End Mega Menu -->
+                            </li>
+
+                        </ul>
+        </div>
+        <!-- End Collapse -->
+      </nav>
+    </div>
+  </header>
 
     <!-- ========== END HEADER ========== -->
 
@@ -251,21 +348,6 @@
                             alt="Logo" width="250">
                         {{-- TOP POINT RECYCLERS --}}
                     </a>
-                    <!-- Socials -->
-                    {{-- <ul class="list-inline list-separator list-separator-light mb-0">
-            <li class="list-inline-item">
-              <a class="link-sm link-light" href="{{ route('privacy') }}">Privacy &amp; Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="link-sm link-light" href="{{ route('terms') }}">Terms</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="link-sm link-light" href="{{ route('faq') }}">FAQ</a>
-            </li>
-            <li class="list-inline-item">
-              <a class="link-sm link-light" href="{{ route('contact') }}">Contact Us</a>
-            </li>
-          </ul> --}}
                     <!-- End Socials -->
                 </div>
 
@@ -278,23 +360,6 @@
                             </a>
                         </li>
 
-                        {{-- <li class="list-inline-item">
-              <a class="btn btn-soft-light btn-xs btn-icon" href="#">
-                <i class="bi-instagram"></i>
-              </a>
-            </li>
-
-            <li class="list-inline-item">
-              <a class="btn btn-soft-light btn-xs btn-icon" href="#">
-                <i class="bi-twitter"></i>
-              </a>
-            </li>
-
-            <li class="list-inline-item">
-              <a class="btn btn-soft-light btn-xs btn-icon" href="#">
-                <i class="bi-youtube"></i>
-              </a>
-            </li> --}}
                     </ul>
                     <!-- End Socials -->
                 </div>

@@ -69,9 +69,7 @@
                                 <span class="text-cap">POLYETHYLENE TEREPHTHALATE (PET)</span>
                             </div>
                             <p class="card-text">
-                                PET is commonly found in the use of bottle applications, PET can be 100% recycled without
-                                ever reaching a landfill. GK Recycling can offer complete a PET recycling whether they are
-                                PET bottles, trays, film etc. Contact us to find out more about our PET recycling services.
+                                PET is frequently used in bottle applications since it is 100% recyclable and never ends up in a landfill. Whether they are PET bottles, trays, films, etc., Top Point Recycler can provide comprehensive PET recycling. To learn more about our PET recycling services, get in touch with us.
                             </p>
                         </div>
 
@@ -144,7 +142,7 @@
             </div>
 
             <div class="container content-space-t-3 content-space-t-lg-5">
-                
+
 
                 <div class="row gx-3">
                     <div class="col mb-3">
@@ -196,5 +194,25 @@
             <!-- End Row -->
         </div>
         <!-- End Clients -->
+
+        <div class="bg-img-center" style="background-color: #ced2ce;height: 391px;">
+      <div class="container content-space-2 content-space-lg-3">
+        <div class="w-md-60 ">
+          <div class="" style="margin-top: 100px;">
+            <p class="text-white">Outdo the sun and refresh your workout with greys, whites and dark brights.</p>
+          </div>
+          <div class="ml-4" style="margin-top: -20px;">
+            <img src="{{ asset('img/00-truck-00.png') }}" alt="" width="500">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      .w-md-60 {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
     </main>
 @endsection
