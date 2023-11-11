@@ -229,8 +229,8 @@
     <div class="container">
       <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
         <!-- Default Logo -->
-        <a class="navbar-brand" href="./index.html" aria-label="Front">
-          <img class="navbar-brand-logo" src="{{ asset('img/output-onlinejpgtools-removebg-preview.png') }}"
+        <a class="navbar-brand" href="/" aria-label="Front">
+          <img class="" src="{{ asset('logo-removebg-preview.png') }}"
                         alt="Logo" width="250" alt="Logo">
         </a>
         <!-- End Default Logo -->
@@ -370,8 +370,8 @@
                 <p class="text-white-50 small">
                     <a class="link-sm link-light" href="#"><i class="bi-geo-alt-fill me-1"></i> Dakata Small
                         Scale Industrial Area, Kano State, Nigeria</a><br>
-                    <a class="link-sm link-light" href="#"><i class="bi-telephone-inbound-fill me-1"></i> +234
-                        9057456389, +234 8099999156</a>
+                    <a class="link-sm link-light" href="#"><i class="bi-envelope me-1"></i> contact@toppointrecyclers.com</a>
+                    <a class="link-sm link-light" href="#"><i class="bi-telephone-inbound-fill me-1"></i> + 2349057456389</a>
                 </p>
                 <p class="text-white-50 small">&copy; Copyright {{ Date('Y') }} TOP POINT RECYCLERS. All rights
                     reserved.</p>

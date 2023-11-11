@@ -299,24 +299,7 @@
     </div>
     <!-- End Team --> --}}
 
-    <div class="bg-img-center" style="background-color: #ced2ce;height: 391px;">
-      <div class="container content-space-2 content-space-lg-3">
-        <div class="w-md-60 ">
-          <div class="" style="margin-top: 100px;">
-            <p class="text-white">Outdo the sun and refresh your workout with greys, whites and dark brights.</p>
-          </div>
-          <div class="ml-4" style="margin-top: -20px;">
-            <img src="{{ asset('img/00-truck-00.png') }}" alt="" width="500">
-          </div>
-        </div>
-      </div>
-    </div>
+    @include('pages._banner')
 
-    <style>
-      .w-md-60 {
-        display: flex;
-        justify-content: space-between;
-      }
-    </style>
 </main>
 @endsection

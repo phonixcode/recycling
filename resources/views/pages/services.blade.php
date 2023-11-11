@@ -20,7 +20,7 @@
 
             <!-- Background Shape -->
             <figure class="position-absolute top-0 start-0 w-65">
-                
+
             </figure>
             <!-- End Background Shape -->
 
@@ -180,24 +180,6 @@
         </div>
         <!-- End Clients -->
 
-        <div class="bg-img-center" style="background-color: #ced2ce;height: 391px;">
-      <div class="container content-space-2 content-space-lg-3">
-        <div class="w-md-60 ">
-          <div class="" style="margin-top: 100px;">
-            <p class="text-white">Outdo the sun and refresh your workout with greys, whites and dark brights.</p>
-          </div>
-          <div class="ml-4" style="margin-top: -20px;">
-            <img src="{{ asset('img/00-truck-00.png') }}" alt="" width="500">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <style>
-      .w-md-60 {
-        display: flex;
-        justify-content: space-between;
-      }
-    </style>
+        @include('pages._banner')
     </main>
 @endsection
