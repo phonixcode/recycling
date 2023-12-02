@@ -47,7 +47,7 @@
                     <!-- Card -->
                     <div class="card h-100">
                         <img class="card-img-top" src="{{ asset('img/869f3eee-0a42-4a74-9894-da20af03b061.jpg') }}"
-                            alt="Image Description">
+                            alt="Image Description" height="300">
 
                         <div class="card-body">
                             <div class="mb-3">
@@ -55,6 +55,25 @@
                             </div>
                             <p class="card-text">
                                 PET is frequently used in bottle applications since it is 100% recyclable and never ends up in a landfill. Whether they are PET bottles, trays, films, etc., Top Point Recycler can provide comprehensive PET recycling. To learn more about our PET recycling services, get in touch with us.
+                            </p>
+                        </div>
+
+
+                    </div>
+                    <!-- End Card -->
+                </div>
+                <div class="col mb-5">
+                    <!-- Card -->
+                    <div class="card h-100">
+                        <img class="card-img-top" src="{{ asset('img/XC3A6S4EX5BVBBOUIFFKGBFWIY.jpg') }}"
+                            alt="Image Description" height="300">
+
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <span class="text-cap">Can</span>
+                            </div>
+                            <p class="card-text">
+                                The aluminum and tin cans get baled and trucked to a smelting plant. The cans are broken down into a molten liquid in the smelting factory. The liquid is molten and resembles lava. After being poured into a mold, the liquid metal cools and solidifies to form a metal bar. Top Point Recycler can provide comprehensive CAN recycling. To learn more about our CAN recycling services, get in touch with us.
                             </p>
                         </div>
 
