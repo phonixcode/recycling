@@ -256,7 +256,7 @@
                 <div class="col-sm-4 mb-3 mb-sm-0">
                     <div class="text-center">
                         <small class="text-cap text-primary">— Total Operation </small>
-                        <h4 class="display-4">500,000</h4>
+                        <h4 class="display-4">1000</h4>
                     </div>
                 </div>
                 <!-- End Col -->
@@ -264,7 +264,7 @@
                 <div class="col-sm-4 mb-3 mb-sm-0">
                     <div class="text-center">
                         <small class="text-cap text-primary">— Staffs</small>
-                        <h4 class="display-4">75%</h4>
+                        <h4 class="display-4">200</h4>
                     </div>
                 </div>
                 <!-- End Col -->
@@ -272,7 +272,7 @@
                 <div class="col-sm-4">
                     <div class="text-center">
                         <small class="text-cap text-primary">— Area of Operation</small>
-                        <h4 class="display-4">125,000</h4>
+                        <h4 class="display-4">1</h4>
                     </div>
                 </div>
                 <!-- End Col -->
