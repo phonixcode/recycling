@@ -298,7 +298,7 @@
         <!-- End Row -->
     </div>
     <!-- End Team --> --}}
-
+@include('pages._step')
     @include('pages._banner')
 
 </main>

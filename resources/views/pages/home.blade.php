@@ -223,8 +223,16 @@
         <!-- End Row -->
       </div>
 
-      <div class="banner-half-middle-x bg-img-start d-none d-md-block" style="background-image: url('{{ asset('img/00-03.png') }}');"></div>
+      <div class="banner-half-middle-x bg-img-start d-none d-md-block" style="background-image: url('{{ asset('img/00-recylce-00.jpg') }}');"></div>
     </div>
+
+    <div class="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
+      <div class="my-4 my-sm-8">
+        <img class="img-fluid rounded-lg" src="{{ asset('img/00-03.png') }}" alt="Image Description">
+      </div>
+    </div>
+
+    @include('pages._step')
 
     <div class="container content-space-2 content-space-lg-3">
       <div class="row">

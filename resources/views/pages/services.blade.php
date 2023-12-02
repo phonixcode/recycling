@@ -179,7 +179,7 @@
             <!-- End Row -->
         </div>
         <!-- End Clients -->
-
+@include('pages._step')
         @include('pages._banner')
     </main>
 @endsection
