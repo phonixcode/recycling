@@ -53,9 +53,9 @@
     <div class="container content-space-2 content-space-lg-3">
         <div class="row justify-content-lg-between align-items-lg-center">
             <div class="col-lg-5 mb-9 mb-lg-0">
-                <div class="mb-3">
+                {{-- <div class="mb-3">
                     <h2 class="h1">Recycle Now For a Better Tomorrow</h2>
-                </div>
+                </div> --}}
                 <p>Top Point Recyclers is a for-profit company that runs an incentive-based recycling program, focusing on PET plastic waste. They recycle and export products globally, serving clients in Nigeria's manufacturing industry while also creating jobs and empowering local youth and women.</p>
                 <div class="mt-4">
                     <a class="btn btn-primary btn-transition px-5" href="{{ route('contact') }}" style="background-color: #1c7b33 !important;">Get in touch</a>
