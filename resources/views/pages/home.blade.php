@@ -223,7 +223,7 @@
         <!-- End Row -->
       </div>
 
-      <div class="banner-half-middle-x bg-img-start d-none d-md-block" style="background-image: url('{{ asset('img/00-recylce-00.jpg') }}');"></div>
+      <div class="banner-half-middle-x bg-img-start d-none d-md-block" style=""></div>
     </div>
 
     <div class="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
