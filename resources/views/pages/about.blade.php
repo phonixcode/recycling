@@ -61,7 +61,7 @@
 
         <div class="row gx-3">
             <div class="col mb-3">
-                <div class="bg-img-start" style="background-image: url({{ asset('img/IMG_8484.jpg') }}); height: 15rem;">
+                <div class="bg-img-start" style="background-image: url({{ asset('img/3.jpeg') }}); height: 15rem;">
                 </div>
             </div>
             <!-- End Col -->
@@ -73,8 +73,10 @@
             <!-- End Col -->
 
             <div class="col mb-3">
-                <div class="bg-img-start" style="background-image: url({{ asset('img/3.jpeg') }}); height: 15rem;">
-                </div>
+
+                <div class="bg-img-start"
+                            style="background-image: url({{ asset('img/IMG_8484.jpg') }}); height: 15rem;">
+                        </div>
             </div>
             <!-- End Col -->
 
