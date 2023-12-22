@@ -6,8 +6,9 @@
         <div class="position-relative overflow-hidden"
             style="
     background-blend-mode: multiply;
-    background-image: url('{{ asset('img/woman_sorting.00d8e69.png') }}'),linear-gradient(rgb(50 139 48),rgb(126 190 38));
+    background-image: url('{{ asset('img/banner.jpeg') }}'),linear-gradient(rgb(50 139 48),rgb(126 190 38));
     background-repeat: no-repeat;
+    background-size: cover;
 ">
             <div class="container position-relative zi-2 content-space-3 content-space-md-5">
                 <div class="w-md-75 w-xl-65 text-center mx-md-auto">
@@ -110,7 +111,7 @@
                                         <use xlink:href="#circleImgID4" />
                                     </clipPath>
                                     <g clip-path="url(#circleImgID3)">
-                                        <image width="515" height="515" xlink:href="{{ asset('img/image-11.jpg') }}"
+                                        <image width="515" height="515" xlink:href="{{ asset('img/2.jpeg') }}"
                                             transform="matrix(1 0 0 1 1.639390e-02 2.880859e-02)"></image>
                                     </g>
                                 </g>
@@ -146,7 +147,7 @@
                                     </clipPath>
                                     <g clip-path="url(#circleImgID5)">
                                         <image width="900" height="900"
-                                            xlink:href="{{ asset('img/recycle-bail.png') }}"
+                                            xlink:href="{{ asset('img/3.jpeg') }}"
                                             transform="matrix(1 0 0 1 -64.8123 -64.8055)"></image>
                                     </g>
                                 </g>
@@ -351,16 +352,16 @@
                         style="position: relative;">
                         <div class="hs-video-bg-video">
                             <video poster="" autoplay="" muted="" loop="">
-                                <source src="./assets/video/working-in-office.mp4" type="video/mp4">
-                                <source src="./assets/video/working-in-office.webm" type="video/webm">
-                                <source src="./assets/video/working-in-office.ogv" type="video/ogg">
+                                <source src="./img/en.mp4" type="video/mp4">
+                                <source src="./img/en.webm" type="video/webm">
+                                <source src="./img/en.ogv" type="video/ogg">
                                 Your browser doesn't support HTML5 video.
                             </video>
                         </div>
                     </div>
 
                     <div class="video-bg-replacer-img"
-                        style="background-image: url(./assets/video/working-in-office.jpg);">
+                        style="background-image: url(./img/3.jpeg);">
                     </div>
                 </div>
             </div>

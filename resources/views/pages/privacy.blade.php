@@ -4,8 +4,9 @@
 <main id="content" role="main">
 
     <div class="position-relative overflow-hidden" style=" background-blend-mode: multiply;
-    background-image: url(/_nuxt/img/woman_sorting.00d8e69.png),linear-gradient(rgb(50 139 48),rgb(126 190 38));
-    background-repeat: no-repeat;">
+    background-image: url('{{ asset('img/banner.jpeg') }}'),linear-gradient(rgb(50 139 48),rgb(126 190 38));
+    background-repeat: no-repeat;
+    background-size: cover;">
         <div class="container position-relative zi-2 content-space-3 content-space-md-5">
             <div class="w-md-75 w-xl-65 text-center mx-md-auto">
                 <!-- Heading -->
@@ -18,7 +19,7 @@
 
         <!-- Background Shape -->
         <figure class="position-absolute top-0 start-0 w-65">
-            
+
         </figure>
         <!-- End Background Shape -->
 
