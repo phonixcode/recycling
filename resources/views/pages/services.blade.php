@@ -47,7 +47,7 @@
                 <div class="col mb-5">
                     <!-- Card -->
                     <div class="card h-100">
-                        <img class="card-img-top" src="{{ asset('img/869f3eee-0a42-4a74-9894-da20af03b061.jpg') }}"
+                        <img class="card-img-top" src="{{ asset('img/1.jpeg') }}"
                             alt="Image Description" height="300">
 
                         <div class="card-body">
@@ -152,7 +152,7 @@
                 <div class="row gx-3">
                     <div class="col mb-3">
                         <div class="bg-img-start"
-                            style="background-image: url({{ asset('img/image-11.jpg') }}); height: 15rem;">
+                            style="background-image: url({{ asset('img/1.jpeg') }}); height: 15rem;">
                         </div>
                     </div>
                     <!-- End Col -->
@@ -166,7 +166,7 @@
 
                     <div class="col mb-3">
                         <div class="bg-img-start"
-                            style="background-image: url({{ asset('img/recycle-bail.png') }}); height: 15rem;">
+                            style="background-image: url({{ asset('img/2.jpeg') }}); height: 15rem;">
                         </div>
                     </div>
                     <!-- End Col -->
