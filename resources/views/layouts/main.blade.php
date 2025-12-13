@@ -5,7 +5,56 @@
     <!-- Required Meta Tags Always Come First -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    @csrf
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+
+    @php
+        // Settings
+        use Artesaos\SEOTools\Facades\JsonLd;
+        use Artesaos\SEOTools\Facades\SEOMeta;
+        use Artesaos\SEOTools\Facades\SEOTools;
+        use Artesaos\SEOTools\Facades\OpenGraph;
+
+        // Seo Tools
+        SEOTools::setTitle('TOP POINT RECYCLERS');
+        SEOTools::setDescription(
+            'Top Point Recyclers is a social enterprise focused on the collection, sorting, and baling of PET bottles sourced from local pickers and households. We empower women by creating job opportunities for young women, widows and divorced women, promoting financial independence. Our mission is to enhance environmental sustainability by facilitating the shipment of sorted materials to recycling facilities both locally and globally, while raising awareness in the community about the value of recycling and the concept that waste can be transformed into wealth.',
+        );
+
+        SEOMeta::setTitle('TOP POINT RECYCLERS');
+        SEOMeta::setDescription(
+            'Top Point Recyclers is a social enterprise focused on the collection, sorting, and baling of PET bottles sourced from local pickers and households. We empower women by creating job opportunities for young women, widows and divorced women, promoting financial independence. Our mission is to enhance environmental sustainability by facilitating the shipment of sorted materials to recycling facilities both locally and globally, while raising awareness in the community about the value of recycling and the concept that waste can be transformed into wealth.',
+        );
+        SEOMeta::addMeta('article:section', 'TOP POINT RECYCLERS', 'property');
+        SEOMeta::addKeyword([
+            'TOP POINT RECYCLERS',
+            'TOP POINT',
+            'RECYCLERS',
+            'recycling program',
+            'PET plastic waste',
+            'incentive-based recycling program',
+            'recycle and export products globally',
+        ]);
+
+        OpenGraph::setTitle('TOP POINT RECYCLERS');
+        OpenGraph::setDescription(
+            'Top Point Recyclers is a social enterprise focused on the collection, sorting, and baling of PET bottles sourced from local pickers and households. We empower women by creating job opportunities for young women, widows and divorced women, promoting financial independence. Our mission is to enhance environmental sustainability by facilitating the shipment of sorted materials to recycling facilities both locally and globally, while raising awareness in the community about the value of recycling and the concept that waste can be transformed into wealth.',
+        );
+        OpenGraph::setUrl(URL::full());
+        OpenGraph::addImage([asset('img/output-onlinejpgtools-removebg-preview.png'), 'size' => 300]);
+
+        JsonLd::setTitle('TOP POINT RECYCLERS');
+        JsonLd::setDescription(
+            'Top Point Recyclers is a social enterprise focused on the collection, sorting, and baling of PET bottles sourced from local pickers and households. We empower women by creating job opportunities for young women, widows and divorced women, promoting financial independence. Our mission is to enhance environmental sustainability by facilitating the shipment of sorted materials to recycling facilities both locally and globally, while raising awareness in the community about the value of recycling and the concept that waste can be transformed into wealth.',
+        );
+        JsonLd::addImage(asset('img/output-onlinejpgtools-removebg-preview.png'));
+
+    @endphp
+
+    <!-- Site Description -->
+    {!! SEOMeta::generate() !!}
+    {!! OpenGraph::generate() !!}
+    {!! Twitter::generate() !!}
+    {!! JsonLd::generate() !!}
 
     <!-- Title -->
     <title>TOP POINT RECYCLERS</title>
@@ -57,6 +106,10 @@
             .navbar-expand-lg.navbar-dark .navbar-topbar-collapse {
                 background-color: #1c7b33 !important;
             }
+        }
+
+        .shadow-effect {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
     </style>
 
@@ -127,7 +180,7 @@
                         <ul class="navbar-nav">
                             <!-- Landings -->
                             <li class="nav-item">
-                                <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link active"
+                                <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link {{ request()->routeIs('home') ? 'active' : '' }}"
                                     aria-current="page" href="{{ route('home') }}" role="button" aria-expanded="false">
                                     Home
                                 </a>
@@ -143,7 +196,7 @@
 
                             <!-- Company -->
                             <li class=" nav-item">
-                                <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link "
+                                <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link {{ request()->routeIs('about') ? 'active' : '' }}"
                                     href="{{ route('about') }}" role="button" aria-expanded="false">About Us</a>
 
                                 <!-- Mega Menu -->
@@ -157,8 +210,8 @@
 
                             <!-- Pages -->
                             <li class=" nav-item">
-                                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link "
-                                    href="{{ route('service') }}" role="button" aria-expanded="false">What We Sell</a>
+                                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link {{ request()->routeIs('service') ? 'active' : '' }}"
+                                    href="{{ route('service') }}" role="button" aria-expanded="false">What We Do</a>
 
                                 <!-- Mega Menu -->
                                 <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu"
@@ -169,7 +222,7 @@
                             <!-- End Pages -->
                             <!-- End Portfolio -->
                             <li class=" nav-item">
-                                <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link  "
+                                <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link {{ request()->routeIs('contact') ? 'active' : '' }}"
                                     href="{{ route('contact') }}" role="button" aria-expanded="false">Contact</a>
 
                                 <!-- Mega Menu -->
@@ -189,127 +242,96 @@
     </header>
 
     <header id="header" class="navbar navbar-expand-lg navbar-end navbar-light bg-white" hsheader="true">
-    <!-- Topbar -->
-    <div class="container navbar-topbar">
-      <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
-        <!-- Toggler -->
-        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="d-flex justify-content-between align-items-center small">
-            <span class="navbar-toggler-text">Topbar</span>
+        <!-- Topbar -->
 
-            <span class="navbar-toggler-default">
-              <i class="bi-chevron-down ms-2"></i>
-            </span>
-            <span class="navbar-toggler-toggled">
-              <i class="bi-chevron-up ms-2"></i>
-            </span>
-          </span>
-        </button>
-        <!-- End Toggler -->
+        <!-- End Topbar -->
 
-        <div id="topbarNavDropdown" class="navbar-nav-wrap-collapse collapse navbar-collapse navbar-topbar-collapse">
-          <div class="navbar-toggler-wrapper">
-            <div class="navbar-topbar-toggler d-flex justify-content-between align-items-center">
-              <span class="navbar-toggler-text small">Topbar</span>
+        <div class="container">
+            <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
+                <!-- Default Logo -->
+                <a class="navbar-brand" href="/" aria-label="Front">
+                    <img class="" src="{{ asset('logo-removebg-preview.png') }}" alt="Logo"
+                        width="250" alt="Logo">
+                </a>
+                <!-- End Default Logo -->
 
-              <!-- Toggler -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topbarNavDropdown" aria-controls="topbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi-x"></i>
-              </button>
-              <!-- End Toggler -->
-            </div>
-          </div>
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-default">
+                        <i class="bi-list"></i>
+                    </span>
+                    <span class="navbar-toggler-toggled">
+                        <i class="bi-x"></i>
+                    </span>
+                </button>
+                <!-- End Toggler -->
 
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!-- Landings -->
+                        <li class="nav-item">
+                            <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link {{ request()->routeIs('home') ? 'active' : '' }}" aria-current="page"
+                                href="{{ route('home') }}" role="button" aria-expanded="false">
+                                Home
+                            </a>
 
+                            <!-- Mega Menu -->
+                            <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="landingsMegaMenu"
+                                style="min-width: 30rem;">
+
+                            </div>
+                            <!-- End Mega Menu -->
+                        </li>
+                        <!-- End Landings -->
+
+                        <!-- Company -->
+                        <li class=" nav-item">
+                            <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link {{ request()->routeIs('about') ? 'active' : '' }}"
+                                href="{{ route('about') }}" role="button" aria-expanded="false">About Us</a>
+
+                            <!-- Mega Menu -->
+                            <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu"
+                                style="min-width: 14rem;">
+
+                            </div>
+                            <!-- End Mega Menu -->
+                        </li>
+                        <!-- End Company -->
+
+                        <!-- Pages -->
+                        <li class=" nav-item">
+                            <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link {{ request()->routeIs('service') ? 'active' : '' }}"
+                                href="{{ route('service') }}" role="button" aria-expanded="false">What We Do</a>
+
+                            <!-- Mega Menu -->
+                            <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu"
+                                style="min-width: 14rem;">
+                            </div>
+                            <!-- End Mega Menu -->
+                        </li>
+                        <!-- End Pages -->
+                        <!-- End Portfolio -->
+                        <li class=" nav-item">
+                            <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link  {{ request()->routeIs('contact') ? 'active' : '' }}"
+                                href="{{ route('contact') }}" role="button" aria-expanded="false">Contact</a>
+
+                            <!-- Mega Menu -->
+                            <div class="hs-sub-menu dropdown-menu" aria-labelledby="portfolioMegaMenu"
+                                style="min-width: 14rem;">
+
+                            </div>
+                            <!-- End Mega Menu -->
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- End Collapse -->
+            </nav>
         </div>
-      </nav>
-    </div>
-    <!-- End Topbar -->
-
-    <div class="container">
-      <nav class="js-mega-menu navbar-nav-wrap hs-menu-initialized hs-menu-horizontal">
-        <!-- Default Logo -->
-        <a class="navbar-brand" href="/" aria-label="Front">
-          <img class="" src="{{ asset('logo-removebg-preview.png') }}"
-                        alt="Logo" width="250" alt="Logo">
-        </a>
-        <!-- End Default Logo -->
-
-        <!-- Toggler -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-default">
-            <i class="bi-list"></i>
-          </span>
-          <span class="navbar-toggler-toggled">
-            <i class="bi-x"></i>
-          </span>
-        </button>
-        <!-- End Toggler -->
-
-        <!-- Collapse -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-                            <!-- Landings -->
-                            <li class="nav-item">
-                                <a id="landingsMegaMenu" class="hs-mega-menu-invoker nav-link active"
-                                    aria-current="page" href="{{ route('home') }}" role="button" aria-expanded="false">
-                                    Home
-                                </a>
-
-                                <!-- Mega Menu -->
-                                <div class="hs-mega-menu dropdown-menu w-100" aria-labelledby="landingsMegaMenu"
-                                    style="min-width: 30rem;">
-
-                                </div>
-                                <!-- End Mega Menu -->
-                            </li>
-                            <!-- End Landings -->
-
-                            <!-- Company -->
-                            <li class=" nav-item">
-                                <a id="companyMegaMenu" class="hs-mega-menu-invoker nav-link "
-                                    href="{{ route('about') }}" role="button" aria-expanded="false">About Us</a>
-
-                                <!-- Mega Menu -->
-                                <div class="hs-sub-menu dropdown-menu" aria-labelledby="companyMegaMenu"
-                                    style="min-width: 14rem;">
-
-                                </div>
-                                <!-- End Mega Menu -->
-                            </li>
-                            <!-- End Company -->
-
-                            <!-- Pages -->
-                            <li class=" nav-item">
-                                <a id="pagesMegaMenu" class="hs-mega-menu-invoker nav-link "
-                                    href="{{ route('service') }}" role="button" aria-expanded="false">What We Sell</a>
-
-                                <!-- Mega Menu -->
-                                <div class="hs-sub-menu dropdown-menu" aria-labelledby="pagesMegaMenu"
-                                    style="min-width: 14rem;">
-                                </div>
-                                <!-- End Mega Menu -->
-                            </li>
-                            <!-- End Pages -->
-                            <!-- End Portfolio -->
-                            <li class=" nav-item">
-                                <a id="portfolioMegaMenu" class="hs-mega-menu-invoker nav-link  "
-                                    href="{{ route('contact') }}" role="button" aria-expanded="false">Contact</a>
-
-                                <!-- Mega Menu -->
-                                <div class="hs-sub-menu dropdown-menu" aria-labelledby="portfolioMegaMenu"
-                                    style="min-width: 14rem;">
-
-                                </div>
-                                <!-- End Mega Menu -->
-                            </li>
-
-                        </ul>
-        </div>
-        <!-- End Collapse -->
-      </nav>
-    </div>
-  </header>
+    </header>
 
     <!-- ========== END HEADER ========== -->
 
@@ -317,7 +339,14 @@
     @yield('content')
     <!-- ========== END MAIN CONTENT ========== -->
 
-    <div class="bg-light overflow-hidden" style="background-image: url({{ asset('img/footer-bg.6aa85ed.svg') }}); height: 300px;">
+    <div class="overflow-hidden"
+        style="
+            background-blend-mode: multiply;
+            background-image: url('{{ asset('img/footer.jpeg') }}'),linear-gradient(rgb(120 148 120), rgb(103 111 92));
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 300px;
+        ">
         <div class="container content-space-2 content-space-lg-3">
             <div class="position-relative">
                 <!-- End Row -->
@@ -355,8 +384,15 @@
                     <!-- Socials -->
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
-                            <a class="btn btn-soft-light btn-xs btn-icon" href="#">
+                            <a target="_blank" class="btn btn-soft-light btn-xs btn-icon"
+                                href="https://www.linkedin.com/company/top-point-recyclers/">
                                 <i class="bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li target="_blank" class="list-inline-item">
+                            <a target="_blank" class="btn btn-soft-light btn-xs btn-icon"
+                                href="https://x.com/toppointrecycle?s=21&t=H1i8GKOrp8Kf5nYBcPJcZQ">
+                                <i class="bi-twitter"></i>
                             </a>
                         </li>
 
@@ -370,8 +406,10 @@
                 <p class="text-white-50 small">
                     <a class="link-sm link-light" href="#"><i class="bi-geo-alt-fill me-1"></i> Dakata Small
                         Scale Industrial Area, Kano State, Nigeria</a><br>
-                    <a class="link-sm link-light" href="#"><i class="bi-envelope me-1"></i> contact@toppointrecyclers.com</a>
-                    <a class="link-sm link-light" href="#"><i class="bi-telephone-inbound-fill me-1"></i> + 2349057456389</a>
+                    <a class="link-sm link-light" href="#"><i class="bi-envelope me-1"></i>
+                        contact@toppointrecyclers.com</a>
+                    <a class="link-sm link-light" href="#"><i class="bi-telephone-inbound-fill me-1"></i> +
+                        2349057456389</a>
                 </p>
                 <p class="text-white-50 small">&copy; Copyright {{ Date('Y') }} TOP POINT RECYCLERS. All rights
                     reserved.</p>

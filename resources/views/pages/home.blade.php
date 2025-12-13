@@ -5,39 +5,40 @@
         <!-- Hero -->
         <div class="position-relative overflow-hidden"
             style="
-    background-blend-mode: multiply;
-    background-image: url('{{ asset('img/banner.jpeg') }}'),linear-gradient(rgb(50 139 48),rgb(126 190 38));
-    background-repeat: no-repeat;
-    background-size: cover;
-">
+                background-blend-mode: multiply;
+                background-image: url('{{ asset('img/banner.jpeg') }}'),linear-gradient(rgb(50 139 48),rgb(126 190 38));
+                background-repeat: no-repeat;
+                background-size: cover;
+            ">
+
             <div class="container position-relative zi-2 content-space-3 content-space-md-5">
-                <div class="w-md-75 w-xl-65 text-center mx-md-auto">
-                    <!-- Heading -->
+                <div class="w-md-75 w-xl-65 text-left ">
                     <div class="mb-7">
-                        <h1 class="display-4 text-white text-capitalize mb-4"><b>RECYCLE NOW FOR A BETTER TOMORROW</b></h1>
+                        <h1 class="display-4 text-white text-capitalize mb-4">
+                            <b>RECYCLE NOW FOR A BETTER TOMORROW</b>
+                        </h1>
                     </div>
-                    <!-- End Title & Description -->
                 </div>
             </div>
 
             <!-- Background Shape -->
             <figure class="position-absolute top-0 start-0 w-65">
-                {{-- <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1246 1078">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1246 1078">
                 <g opacity=".4">
                     <linearGradient id="doubleEllipseTopLeftID1" gradientUnits="userSpaceOnUse" x1="2073.5078"
                         y1="1.7251" x2="2273.4375" y2="1135.5818" gradientTransform="matrix(-1 0 0 1 2600 0)">
-                        <stop offset="0.4976" style="stop-color:gulpLighten[#377dff,30]" />
-                        <stop offset="1" style="stop-color:#377dff" />
+                        <stop offset="0.4976" style="stop-color:gulpLighten[#3aff37,30]" />
+                        <stop offset="1" style="stop-color:#caff37" />
                     </linearGradient>
                     <polygon fill="url(#doubleEllipseTopLeftID1)" points="519.8,0.6 0,0.6 0,1078 863.4,1078   " />
                     <linearGradient id="doubleEllipseTopLeftID2" gradientUnits="userSpaceOnUse" x1="1717.1648"
                         y1="3.779560e-05" x2="1717.1648" y2="644.0417" gradientTransform="matrix(-1 0 0 1 2600 0)">
-                        <stop offset="1.577052e-06" style="stop-color:gulpLighten[#377dff,30]" />
-                        <stop offset="1" style="stop-color:#377dff" />
+                        <stop offset="1.577052e-06" style="stop-color:gulpLighten[#ffd037,30]" />
+                        <stop offset="1" style="stop-color:#41ff37" />
                     </linearGradient>
                     <polygon fill="url(#doubleEllipseTopLeftID2)" points="519.7,0 1039.4,0.6 1246,639.1 725.2,644   " />
                 </g>
-            </svg> --}}
+            </svg>
             </figure>
             <!-- End Background Shape -->
 
@@ -58,11 +59,11 @@
                     {{-- <div class="mb-3">
                     <h2 class="h1">Recycle Now For a Better Tomorrow</h2>
                 </div> --}}
-                    <p>Top Point Recyclers is a for-profit company that runs an incentive-based recycling program, focusing
-                        on PET plastic waste. They recycle and export products globally, serving clients in Nigeria's
-                        manufacturing industry while also creating jobs and empowering local youth and women.</p>
+                    <p>
+                        Top Point Recyclers is a social enterprise focused on the collection, sorting, and baling of PET bottles sourced from local pickers and households. We empower women by creating job opportunities for young women, widows and divorced women, promoting financial independence. Our mission is to enhance environmental sustainability by facilitating the shipment of sorted materials to recycling facilities both locally and globally, while raising awareness in the community about the value of recycling and the concept that waste can be transformed into wealth.
+                    </p>
                     <div class="mt-4">
-                        <a class="btn btn-primary btn-transition px-5" href="{{ route('contact') }}"
+                        <a class="btn btn-primary btn-transition px-5" href="mailto:contact@toppointrecyclers.com"
                             style="background-color: #1c7b33 !important;">Get in touch</a>
                     </div>
                 </div>
@@ -84,7 +85,7 @@
                                     </clipPath>
                                     <g clip-path="url(#circleImgID1)">
                                         <image width="450" height="450"
-                                            xlink:href="{{ asset('img/Where-Does-Plastic-Recycling-Go.jpg') }}"></image>
+                                            xlink:href="{{ asset('img/abt/5.jpeg') }}"></image>
                                     </g>
                                 </g>
                             </svg>
@@ -111,7 +112,7 @@
                                         <use xlink:href="#circleImgID4" />
                                     </clipPath>
                                     <g clip-path="url(#circleImgID3)">
-                                        <image width="515" height="515" xlink:href="{{ asset('img/2.jpeg') }}"
+                                        <image width="515" height="515" xlink:href="{{ asset('img/abt/2.jpeg') }}"
                                             transform="matrix(1 0 0 1 1.639390e-02 2.880859e-02)"></image>
                                     </g>
                                 </g>
@@ -147,7 +148,7 @@
                                     </clipPath>
                                     <g clip-path="url(#circleImgID5)">
                                         <image width="900" height="900"
-                                            xlink:href="{{ asset('img/3.jpeg') }}"
+                                            xlink:href="{{ asset('img/abt/3.jpeg') }}"
                                             transform="matrix(1 0 0 1 -64.8123 -64.8055)"></image>
                                     </g>
                                 </g>
@@ -162,87 +163,6 @@
         </div>
         <!-- End Features -->
 
-        <div class="position-relative mt-5">
-            <div class="container content-space-lg-3">
-                <div class="row align-items-center">
-                    <div class="col-12 mb-7 mb-md-0">
-                        <!-- Heading -->
-                        <div class="w-md-65 mb-7">
-                            <h2 class="h1">Our Recycling Process</h2>
-                            <p>
-                                At Top Point Recyclers, we've streamlined our recycling process to make it easy for you to
-                                join us in our mission to protect the environment and reduce waste. Here's a step-by-step
-                                illustration of how it all works
-                            </p>
-                        </div>
-                        <!-- End Heading -->
-
-                        <div class="row">
-                            <div class="col-md-4 mb-3 mb-md-0">
-                                <!-- Card -->
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <span class="svg-icon text-primary mb-3">
-
-
-                                        </span>
-                                        <h4 class="card-title">People Dispose the Dirt</h4>
-                                        <p class="card-text">It all starts with you! You, our valued customers, play a
-                                            crucial role in the recycling process. You responsibly dispose of recyclable
-                                            materials such as paper, plastics, glass, and electronics. By making a conscious
-                                            choice to separate recyclables from trash, you're taking the first step toward a
-                                            cleaner, greener world.</p>
-                                    </div>
-                                </div>
-                                <!-- End Card -->
-                            </div>
-                            <!-- End Col -->
-
-                            <div class="col-md-4 mb-3 mb-md-0">
-                                <!-- Card -->
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <span class="svg-icon text-primary mb-3">
-
-
-                                        </span>
-                                        <h4 class="card-title">The Company Truck Carries</h4>
-                                        <p class="card-text">Once you've sorted your recyclables, our dedicated company
-                                            trucks swing into action. They're specially equipped to collect your materials
-                                            efficiently and safely. Our professional drivers ensure that your recyclables
-                                            are handled with care and transported to our facility.</p>
-                                    </div>
-                                </div>
-                                <!-- End Card -->
-                            </div>
-                            <!-- End Col -->
-
-                            <div class="col-md-4">
-                                <!-- Card -->
-                                <div class="card h-100">
-                                    <div class="card-body">
-                                        <span class="svg-icon text-primary mb-3">
-
-
-                                        </span>
-                                        <h4 class="card-title">Truck Delivers the Dirt to the Organization for Storage</h4>
-                                        <p class="card-text">At our state-of-the-art facility, your recyclables are
-                                            received and sorted. We have dedicated storage areas for various types of
-                                            materials, ensuring efficient organization and ease of access.</p>
-                                    </div>
-                                </div>
-                                <!-- End Card -->
-                            </div>
-                            <!-- End Col -->
-                        </div>
-                        <!-- End Row -->
-                    </div>
-                    <!-- End Col -->
-                </div>
-                <!-- End Row -->
-            </div>
-
-        </div>
 
         <div class="container content-space-t-3 content-space-t-lg-4 content-space-b-2">
             <div class="my-4 my-sm-8">
@@ -256,16 +176,16 @@
             <div class="row">
                 <div class="col-sm-4 mb-3 mb-sm-0">
                     <div class="text-center">
-                        <small class="text-cap text-primary">— Total Operation </small>
-                        <h4 class="display-4">1000</h4>
+                        <small class="text-cap text-primary">— Total Collection </small>
+                        <h4 class="display-4">1200 tons</h4>
                     </div>
                 </div>
                 <!-- End Col -->
 
                 <div class="col-sm-4 mb-3 mb-sm-0">
                     <div class="text-center">
-                        <small class="text-cap text-primary">— Staffs</small>
-                        <h4 class="display-4">200</h4>
+                        <small class="text-cap text-primary">— Staff</small>
+                        <h4 class="display-4">70</h4>
                     </div>
                 </div>
                 <!-- End Col -->
@@ -292,8 +212,7 @@
                                 <img class="avatar" src="{{ asset('img/images (1).png') }}" alt="Logo">
                             </div>
                             <h3 class="card-title">Collection</h3>
-                            <p class="card-text text-body">To collect and treat used objects and materials that are ready
-                                to be thrown out in order to produce materials that can be used again.</p>
+                            <p class="card-text text-body">We collect the PET bottles generated from households and local pickers and prepare them for the subsequent stage of recycling.</p>
                         </div>
 
                     </a>
@@ -309,8 +228,7 @@
                                 <img class="avatar" src="{{ asset('img/images.png') }}" alt="Logo">
                             </div>
                             <h3 class="card-title">Sort</h3>
-                            <p class="card-text text-body">The best scripts alternative and quick reports for the whole
-                                team.</p>
+                            <p class="card-text text-body">We sort the bottles by color, removing the labels and caps during this process. This ensures that the bottles are clean and prepared for the next stage .Sorting them in this manner enhances the quality of the recycled materials.</p>
                         </div>
 
                     </a>
@@ -327,8 +245,7 @@
                             </div>
                             <h3 class="card-title">Bale</h3>
                             <p class="card-text text-body">
-                                A waste baler can reduce a large volume of trash or recycling to a fraction of its original
-                                size
+                                We compress the PET bottles into smaller bales to facilitate transport. This enhances the efficiency of transferring the bottles to the recycling facilities.
                             </p>
                         </div>
 
@@ -360,8 +277,15 @@
                         </div>
                     </div>
 
-                    <div class="video-bg-replacer-img"
-                        style="background-image: url(./img/3.jpeg);">
+                    <div class="video-bg-replacer-img">
+                        <div class="hs-video-bg-video">
+                            <video poster="" autoplay="" muted="" loop="">
+                                <source src="./img/IMG_8469.mp4" type="video/mp4">
+                                <source src="./img/IMG_8469.webm" type="video/webm">
+                                <source src="./img/IMG_8469.ogv" type="video/ogg">
+                                Your browser doesn't support HTML5 video.
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>

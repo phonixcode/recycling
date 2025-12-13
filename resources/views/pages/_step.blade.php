@@ -88,9 +88,8 @@
       <div class="container position-relative zi-1 content-space-3 content-space-sm-4">
         <!-- Heading -->
         <div class="w-md-75 w-lg-50 text-center mx-md-auto">
-          <h2 class="h1">Our Recycling Process</h2>
-          <p>At Top Point Recyclers, we've streamlined our recycling process to make it easy for you to join us in our mission to protect the environment and reduce waste</p>
-          {{-- <a class="link" href="#">Discover how businesses use Front <i class="bi-chevron-right small ms-1"></i></a> --}}
+          {{-- <h2 class="h1">...</h2> --}}
+          {{-- <p>...</p> --}}
         </div>
         <!-- End Heading -->
       </div>

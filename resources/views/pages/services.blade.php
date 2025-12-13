@@ -12,7 +12,7 @@
                 <div class="w-md-75 w-xl-65 text-center mx-md-auto">
                     <!-- Heading -->
                     <div class="mb-7">
-                        <h1 class="display-4 text-white text-capitalize mb-4">What We Sell</h1>
+                        <h1 class="display-4 text-white text-capitalize mb-4">What We Do</h1>
                         <p class="lead text-white text-capitalize mb-4"></p>
                     </div>
                     <!-- End Title & Description -->
@@ -33,172 +33,182 @@
             </div>
             <!-- End Shape -->
         </div>
+        
+        <div class="container content-space-2">
+
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-5 mb-lg-0">
+                    <!-- Card -->
+                    <a class="card card-lg card-transition h-100 text-center" href="#">
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <img class="avatar" src="{{ asset('img/images (1).png') }}" alt="Logo">
+                            </div>
+                            <h3 class="card-title">Collection</h3>
+                            <p class="card-text text-body">We collect the PET bottles generated from households and local pickers and prepare them for the subsequent stage of recycling.</p>
+                        </div>
+
+                    </a>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-md-5 mb-lg-0">
+                    <!-- Card -->
+                    <a class="card card-lg card-transition h-100 text-center" href="#">
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <img class="avatar" src="{{ asset('img/images.png') }}" alt="Logo">
+                            </div>
+                            <h3 class="card-title">Sort</h3>
+                            <p class="card-text text-body">We sort the bottles by color, removing the labels and caps during this process. This ensures that the bottles are clean and prepared for the next stage .Sorting them in this manner enhances the quality of the recycled materials.</p>
+                        </div>
+
+                    </a>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+
+                <div class="col-md-6 col-lg-4">
+                    <!-- Card -->
+                    <a class="card card-lg card-transition h-100 text-center" href="#">
+                        <div class="card-body">
+                            <div class="mb-4">
+                                <img class="avatar" src="{{ asset('img/download.jpg') }}" alt="Logo">
+                            </div>
+                            <h3 class="card-title">Bale</h3>
+                            <p class="card-text text-body">
+                                We compress the PET bottles into smaller bales to facilitate transport. This enhances the efficiency of transferring the bottles to the recycling facilities.
+                            </p>
+                        </div>
+
+                    </a>
+                    <!-- End Card -->
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+        </div>
+
+        <div class="container content-space-2 content-space-lg-3">
+            <div class="row">
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="text-center">
+                        <small class="text-cap text-primary">— Total Collection </small>
+                        <h4 class="display-4">1200 tons</h4>
+                    </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                    <div class="text-center">
+                        <small class="text-cap text-primary">— Staff</small>
+                        <h4 class="display-4">70</h4>
+                    </div>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <small class="text-cap text-primary">— Area of Operation</small>
+                        <h4 class="display-4">1</h4>
+                    </div>
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Row -->
+        </div>
 
         <!-- Clients -->
         <div class="container content-space-2 content-space-lg-3">
-            <!-- Heading -->
-            <div class="w-md-75 w-lg-50 text-center mx-md-auto mb-5 mb-md-9">
-                <span class="text-cap">Products for Your Needs</span>
-                {{-- <span>We offer our customers the most comprehensive multitude of raw materials in the industry, including virgin and recycled thermoplastic resins ranging from polyethylene terephthalate (PET) to polypropylene (PP) to polyethylene (PE) to polystyrene (PS). Throughout our manufacturing operations, we use state-of-the-art processing technology and equipment to continuously deliver the highest-quality products for our customers</span> --}}
-            </div>
-            <!-- End Heading -->
 
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5">
-                <div class="col mb-5">
-                    <!-- Card -->
-                    <div class="card h-100">
-                        <img class="card-img-top" src="{{ asset('img/1.jpeg') }}"
-                            alt="Image Description" height="300">
-
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <span class="text-cap">POLYETHYLENE TEREPHTHALATE (PET)</span>
-                            </div>
-                            <p class="card-text">
-                                PET is frequently used in bottle applications since it is 100% recyclable and never ends up in a landfill. Whether they are PET bottles, trays, films, etc., Top Point Recycler can provide comprehensive PET recycling. To learn more about our PET recycling services, get in touch with us.
-                            </p>
-                        </div>
-
-
+            <div class="container content-space-2 ">
+                <h2>Household Collection</h2>
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <img class="rounded img-fluid shadow-effect" src="{{ asset('img/wht/20241207_151025.jpg') }}" alt="">
                     </div>
-                    <!-- End Card -->
-                </div>
-                <div class="col mb-5">
-                    <!-- Card -->
-                    <div class="card h-100">
-                        <img class="card-img-top" src="{{ asset('img/XC3A6S4EX5BVBBOUIFFKGBFWIY.jpg') }}"
-                            alt="Image Description" height="300">
+                    <!-- End Col -->
 
-                        <div class="card-body">
-                            <div class="mb-3">
-                                <span class="text-cap">Can</span>
-                            </div>
-                            <p class="card-text">
-                                The aluminum and tin cans get baled and trucked to a smelting plant. The cans are broken down into a molten liquid in the smelting factory. The liquid is molten and resembles lava. After being poured into a mold, the liquid metal cools and solidifies to form a metal bar. Top Point Recycler can provide comprehensive CAN recycling. To learn more about our CAN recycling services, get in touch with us.
-                            </p>
-                        </div>
-
-
-                    </div>
-                    <!-- End Card -->
-                </div>
-                <!-- End Col -->
-
-                {{-- <div class="col mb-5">
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="{{ asset('img/ldpe-01.jpg') }}" alt="Image Description">
-
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <span class="text-cap">LOW DENSITY POLYETHYLENE (LDPE)</span>
-                        </div>
-                        <p class="card-text">
-                            Low density polyethylene (LDPE) is commonly used for shrink wrap, grocery bags and other clear film packaging/wraps. LDPE waste is most commonly found in distribution centres, warehouses, food manufacturers, supermarkets and cash & carries, here at Top Point Recyclers we can offer a complete LDPE recycling Service, we sell LDPE waste waste at competitive rates.
+                    <div class="col-lg-6">
+                        <p>
+                            The household collection program is an incentive based initiative that gathers recyclable
+                            materials directly from residents’ home. With a primary focus on plastic and other recyclables,
+                            allowing households to dispose their waste responsibly. By simplifying the process, the program
+                            encourages participation and helps reduce the amount of waste that ends up at Landfills.
                         </p>
-                    </div>
-
-
-                </div>
-                <!-- End Card -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col mb-5">
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="{{ asset('img/hdpe-01.jpg') }}" alt="Image Description">
-
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <span class="text-cap">HIGH DENSITY POLYETHYLENE (HDPE)</span>
-                        </div>
-                        <p class="card-text">
-                            High density polyethylene is a stronger heavier plastic and is used a wide range of applications due to its durability. These are most commonly found in items such as pipes, road traffic barriers, bins, detergent bottles, milk bottles etc.
-                        </p>
-                    </div>
-
-
-                </div>
-                <!-- End Card -->
-            </div>
-            <!-- End Col -->
-
-            <div class="col mb-5">
-                <!-- Card -->
-                <div class="card h-100">
-                    <img class="card-img-top" src="{{ asset('img/polypropylene-01.jpg') }}" alt="Image Description">
-
-                    <div class="card-body">
-                        <div class="mb-3">
-                            <span class="text-cap">POLYPROPYLENE (PP)</span>
-                        </div>
-                        <p class="card-text">
-                            Plastics made up of PP (polypropylene) is a one of the most commonly used plastic and can be found in daily applications including items such as fruit crates, buckets, pallets, pots and many more including production waste lumps, purge. Whether you have redundant trays, baskets or scrap PP,
-                            Top Point Recyclers we sell PP scrap that can be reused in manufacturing.
-                        </p>
-                    </div>
-
-
-                </div>
-                <!-- End Card -->
-            </div> --}}
-                <!-- End Col -->
-            </div>
-
-            <div class="container content-space-t-3 content-space-t-lg-5">
-
-
-                <div class="row gx-3">
-                    <div class="col mb-3">
-                        <div class="bg-img-start" style="background-image: url({{ asset('img/3.jpeg') }}); height: 15rem;">
-                </div>
-                    </div>
-                    <!-- End Col -->
-
-                    <div class="col-3 d-none d-md-block mb-3">
-                        <div class="bg-img-start"
-                            style="background-image: url({{ asset('img/2.jpeg') }}); height: 15rem;">
-                        </div>
-                    </div>
-                    <!-- End Col -->
-
-                    <div class="col mb-3">
-                        <div class="bg-img-start"
-                            style="background-image: url({{ asset('img/IMG_8484.jpg') }}); height: 15rem;">
-                        </div>
-                    </div>
-                    <!-- End Col -->
-
-                    <div class="w-100"></div>
-
-                    <div class="col mb-3 mb-md-0">
-                        <div class="bg-img-start"
-                            style="background-image: url({{ asset('img/2.jpeg') }}); height: 15rem;">
-                        </div>
-                    </div>
-                    <!-- End Col -->
-
-                    <div class="col-4 d-none d-md-block mb-3 mb-md-0">
-                        <div class="bg-img-start"
-                            style="background-image: url({{ asset('img/XC3A6S4EX5BVBBOUIFFKGBFWIY.jpg') }}); height: 15rem;">
-                        </div>
-                    </div>
-                    <!-- End Col -->
-
-                    <div class="col">
-                        <div class="bg-img-start"
-                            style="background-image: url({{ asset('img/SEI_129262540.jpg') }}); height: 15rem;">
-                        </div>
                     </div>
                     <!-- End Col -->
                 </div>
                 <!-- End Row -->
             </div>
-            <!-- End Row -->
+
+            <div class="container content-space-2 ">
+                <h2>Women Empowerment</h2>
+
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-6">
+                        <p>
+                            The women empowerment program at Top Point Recyclers focuses on supporting young widows and
+                            divorcees by providing them with skill development and vocational training in the recycling
+                            industry. This initiative aims to equip these women with the necessary knowledge and resources
+                            to achieve financial independence and improve their social standing, addressing the
+                            stigmatization they often face. By integrating them into our workforce, the program builds
+                            resilience and self-esteem, enabling them to contribute positively to their communities while
+                            promoting sustainable practices and gender equality. In Kano, we have successfully empowered 60
+                            women through our recycling initiatives. These women have also become advocates for
+                            sustainability in their immediate communities.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <img class="rounded img-fluid shadow-effect" src="{{ asset('img/wht/20240502_103038.jpg') }}" alt="">
+                    </div>
+                </div>
+                <!-- End Row -->
+            </div>
+
+            <div class="container content-space-2 ">
+                <h2>Creating Awareness</h2>
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <img class="rounded img-fluid shadow-effect" src="{{ asset('img/wht/recycle.png') }}" alt="">
+                    </div>
+                    <!-- End Col -->
+
+                    <div class="col-lg-6">
+                        <p>
+                            At Top Point Recyclers, we ensure that people are aware of the benefits of recycling, letting
+                            them understand how they save the planet and ecosystem. We go to schools to engage with
+                            students, marketplaces, and communities
+                        </p>
+                    </div>
+                    <!-- End Col -->
+                </div>
+                <!-- End Row -->
+            </div>
+
+            <div class="container content-space-2 ">
+                <h2>Promoting Environmental Sustainability</h2>
+
+                <div class="row justify-content-lg-between">
+                    <div class="col-lg-6">
+                        <p>
+                            At Top Point Recyclers, we promote sustainability via our work, driving joint recycling
+                            initiatives and efforts across the Northern part of Nigeria.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <img class="rounded img-fluid" src="{{ asset('img/wht/aware.jpeg') }}" alt="">
+                    </div>
+                </div>
+                <!-- End Row -->
+            </div>
+
+            
         </div>
+
+
         <!-- End Clients -->
-@include('pages._step')
         @include('pages._banner')
     </main>
 @endsection
